@@ -1,0 +1,38 @@
+.header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding-top: 42px;
+    padding-bottom: 40px;
+  }
+  .header__nav-list{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  }
+
+  .header__nav-item{
+    &:not(:last-child){
+      margin-right: 20px
+    }
+    
+  }
+  .header__nav-link{
+    font-weight: 700;
+    font-size: 12px;
+    padding: 10px;
+    color: rgba(255, 255, 255, 0.87);
+    font-style: normal;
+    &:hover,
+    &:focus{
+      color:  #BB86FC;
+      border-radius: 16px;
+}
+  }
+
+  @media screen and (min-width: 768px){
+    .header__nav-link{
+      font-size: 20px;
+    }
+  }

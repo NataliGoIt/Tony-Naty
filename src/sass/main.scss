@@ -4,4 +4,11 @@
  */
 
 // Стили для файла с примером HTML-фрагмента
-@import './example';
+@import './base/base';
+@import './base/container';
+@import './layouyt/header';
+@import './layouyt/hero';
+@import './layouyt/new';
+@import './layouyt/music';
+@import './layouyt/footer';
+@import './utils/variables';
