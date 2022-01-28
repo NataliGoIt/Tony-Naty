@@ -21,29 +21,17 @@
     margin-top: 30px;
 }
 .new__social-title{
-    display: none;
+    display: block;
+    margin-right: 10px;
 }
 .new__social-link{
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        cursor: pointer;
+      
     }
     
-    .new__social-list{
-        display: none ;
-        align-items: center;
-        justify-content: center;
-    }
-    .new__social-item{
-        transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-        cursor: pointer;
-        &:not(:last-child) {
-            margin-right: 15px;
-        }
-    }
     .link__svg-sl{
-        width: 25px;
-        height: 25px;
+        width: 70px;
+        height: 40px;
         fill: rgba(255, 255, 255, 0.6);
         &:hover,
         &:focus{
@@ -71,7 +59,7 @@
         display: block;
         font-weight: 700;
     font-size: 20px;
-    margin-right: 10px;
+   
     }
     .flex{
     display: flex;
