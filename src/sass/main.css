@@ -305,6 +305,7 @@ body {
   .new__text {
     width: 250px;
     height: 250px;
+    margin: 0;
     margin-right: 70px;
   }
   .new__text-title {
@@ -703,7 +704,16 @@ body {
   text-align: center;
 }
 
+.footer__flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
 .footer__contact {
+  width: 200px;
   text-align: left;
 }
 
@@ -773,6 +783,9 @@ body {
   }
   .footer__nav-link {
     font-size: 23px;
+  }
+  .footer__contact {
+    width: 300px;
   }
 }
 

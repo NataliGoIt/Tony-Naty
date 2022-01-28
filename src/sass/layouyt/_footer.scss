@@ -4,7 +4,12 @@
     background: rgba(18, 18, 18, 0.849);
     text-align: center;
 }
+.footer__flex{
+    display: flex;
+    justify-content: space-around;
+}
 .footer__contact{
+    width: 200px;
     text-align: left;
 }
 .footer__contact-title{
@@ -69,4 +74,7 @@
      .footer__nav-link{
          font-size: 23px;
      }
+     .footer__contact{
+        width: 300px;
+    }
 }
