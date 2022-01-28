@@ -18,8 +18,8 @@ musicLeft = document.querySelector('.music__left'),
 musicRight = document.querySelector('.music__right'),
 musicBtnLpaylist = document.querySelector('.music__playlist-list'),
 
-music1 = document.querySelector('.music-1'),
-audio1 = document.querySelector('#audio1'),
+// music1 = document.querySelector('.music-1'),
+// audio1 = document.querySelector('#audio1'),
 
 // music2 = document.querySelector('.music-2'),
 // audio2 = document.querySelector('#audio2'),
@@ -49,18 +49,38 @@ music10 = document.querySelector('.music-10'),
 audio10 = document.querySelector('#audio10'),
 
 music11 = document.querySelector('.music-11'),
-audio11 = document.querySelector('#audio11')
+audio11 = document.querySelector('#audio11'),
+
+music12 = document.querySelector('.music-12'),
+audio12 = document.querySelector('#audio12'),
+
+music13 = document.querySelector('.music-13'),
+audio13 = document.querySelector('#audio13')
 
 
 
-
-music1.addEventListener('click', onAudioOne);
-function  onAudioOne(){
-    audio.scr = audio1.src;
+music12.addEventListener('click', onAudioHG)
+function onAudioHG(){
+    audio.src = audio12.src;
     playSong();
     title.innerHTML = "22:22";
     onPlaulistBtnList();
 }
+music13.addEventListener('click', onAudioTh)
+function  onAudioTh(){
+    audio.src = audio13.src;
+    playSong();
+    title.innerHTML = "Feel So Good";
+    onPlaulistBtnList();
+}
+
+// music1.addEventListener('click', onAudioOne);
+// function  onAudioOne(){
+//     audio.scr = audio1.src;
+//     playSong();
+//     title.innerHTML = "22:22";
+//     onPlaulistBtnList();
+// }
 
 // music2.addEventListener('click', onAudioToo);
 // function  onAudioToo(){
