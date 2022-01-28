@@ -177,6 +177,10 @@ function playSong(){
     player.classList.add('play')
     cover.classList.add('active')
     audio.play()
+    if(playBtn.classList.contains('play-img')){
+        playBtn.classList.remove('play-img')
+        playBtn.classList.add('pause')
+    }
     
 }
 
@@ -184,7 +188,10 @@ function pauseSong(){
     player.classList.remove('play')
     cover.classList.remove('active')
     audio.pause()
-    
+    if(playBtn.classList.contains('pause')){
+        playBtn.classList.add('play-img')
+        playBtn.classList.remove('pause')
+    }
 }
 playBtn.addEventListener('click', () =>{
     const isPlaying = player.classList.contains('play')

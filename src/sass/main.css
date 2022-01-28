@@ -136,6 +136,8 @@ body {
   text-align: center;
   max-width: 1600px;
   margin: 0 auto;
+  height: 400px;
+  max-height: 100vh;
 }
 
 .hero__text-box {
@@ -144,23 +146,25 @@ body {
 
 .hero__title {
   font-weight: 700;
-  font-size: 24px;
+  font-size: 36px;
   margin-bottom: 40px;
+  letter-spacing: 2px;
 }
 
 .hero__description {
-  margin-top: 40px;
+  margin-left: 10px;
+  padding-left: 40px;
   font-weight: bold;
-  font-size: 35px;
-  letter-spacing: 5px;
+  font-size: 55px;
+  letter-spacing: 20px;
   color: transparent;
   -webkit-text-stroke: 1px  #FFFFFF;
 }
 
 @media screen and (min-width: 321px) {
   .hero {
-    padding-top: 280px;
-    padding-bottom: 260px;
+    padding-top: 230px;
+    padding-bottom: 90px;
   }
 }
 
@@ -168,9 +172,11 @@ body {
   .hero__title {
     font-size: 35px;
     margin-bottom: 50px;
+    padding-left: 40px;
   }
   .hero__description {
     font-size: 80px;
+    padding-left: 80px;
   }
 }
 
@@ -476,7 +482,36 @@ body {
   cursor: pointer;
 }
 
+.play-img {
+  width: 45px;
+  height: 45px;
+  padding: 0;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(../images/play.png);
+  cursor: pointer;
+}
+
+.pause {
+  width: 47px;
+  height: 47px;
+  padding: 0;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(../images/pause.png);
+  cursor: pointer;
+}
+
 .btn__next {
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(../images/stop.png);
   cursor: pointer;
 }
 

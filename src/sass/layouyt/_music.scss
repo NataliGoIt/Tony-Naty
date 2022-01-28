@@ -46,7 +46,7 @@ display: block;
 width: 180px;
 height: 180px;
 border-radius: 50%;
-  &.active{
+ &.active{
 animation: rotateAnimation 3s linear infinite;
 }
 }
@@ -92,24 +92,36 @@ animation: rotateAnimation 3s linear infinite;
     cursor: pointer;
 }
 .btn__play{
-    cursor: pointer;
-   
-    
+    cursor: pointer; 
 }
-// .play-img{
- 
-//     background-position: center;
-//     background-repeat: no-repeat;
-//     background-size: cover;
-//     background-image: url(../images/play.png);
-// }
-// .pause{
-//     background-position: center;
-//     background-repeat: no-repeat;
-//     background-size: cover;
-//     background-image: url(../images/pause.png);
-// }
+.play-img{
+    width: 45px;
+    height: 45px;
+    padding: 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(../images/play.png);
+    cursor: pointer;
+}
+.pause{
+    width: 47px;
+    height: 47px;
+    padding: 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(../images/pause.png);
+    cursor: pointer;
+}
 .btn__next{
+    width: 44px;
+    height: 44px;
+    padding: 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(../images/stop.png);
     cursor: pointer;
 }
 
