@@ -4,7 +4,7 @@ let audio = document.querySelector('.audio');
 const player = document.querySelector('.player'),
 playBtn = document.querySelector('.btn__play'),
 prevBtn = document.querySelector('.btn__prev'),
-nextBtn = document.querySelector('.btn__next'),
+btnStop  = document.querySelector('.btn__next'),
 btnLpayPause = document.querySelector('.btn__play-fa'),
 
 progressContainer = document.querySelector('.progress__container'),
@@ -17,6 +17,7 @@ musicPlaylist = document.querySelector('.music__playlist'),
 musicLeft = document.querySelector('.music__left'),
 musicRight = document.querySelector('.music__right'),
 musicBtnLpaylist = document.querySelector('.music__playlist-list'),
+
 
 // music1 = document.querySelector('.music-1'),
 // audio1 = document.querySelector('#audio1'),
@@ -258,7 +259,11 @@ function onPlaulistBtnList (){
     musicRight.classList.remove('music__block')
 }
 
-
+btnStop.addEventListener('click', onStop)
+function onStop(){
+    pauseSong();
+    audio.currentTime = 0;
+}
 // musicPlaylist.addEventListener('click', onClick)
 // function onClick(e){
 //     let elem = e.target;
