@@ -46,6 +46,8 @@ display: block;
 width: 180px;
 height: 180px;
 border-radius: 50%;
+fill: #292929;
+stroke: rgba(255, 255, 255, 0.6);
  &.active{
 animation: rotateAnimation 3s linear infinite;
 }
