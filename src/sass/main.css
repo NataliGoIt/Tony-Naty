@@ -719,11 +719,13 @@ body {
 
 .footer__contact-title {
   margin-bottom: 15px;
+  color: rgba(255, 255, 255, 0.973);
 }
 
 .footer__logo {
   font-family: var(--fonts-logo);
-  margin-bottom: 60px;
+  font-size: 35px;
+  margin-bottom: 80px;
 }
 
 .footer__nav-list {
@@ -734,11 +736,15 @@ body {
   margin-bottom: 15px;
 }
 
+.footer__nav-list-right {
+  text-align: left;
+}
+
 .link__svg-ft {
   width: 20px;
   height: 20px;
   padding: 10px;
-  fill: #ffffff;
+  fill: rgba(255, 255, 255, 0.829);
 }
 
 .link__svg-ft:hover, .link__svg-ft:focus {
@@ -748,7 +754,7 @@ body {
 }
 
 .footer__nav-link {
-  color: #ffffff;
+  color: rgba(255, 255, 255, 0.904);
   font-style: normal;
   font-size: 12px;
 }
@@ -781,8 +787,11 @@ body {
   .footer__social-item:not(:last-child) {
     margin-right: 25px;
   }
-  .footer__nav-link {
+  .footer__contact-title {
     font-size: 23px;
+  }
+  .footer__nav-link {
+    font-size: 20px;
   }
   .footer__contact {
     width: 300px;
@@ -796,6 +805,6 @@ body {
   --accent-color: #fac564;
   --play-btn: url(../images/play.png);
   --pause-btn: url(../images/pause.png);
-  --fonts-logo:'Sawarabi Mincho', serif;
+  --fonts-logo: 'Satisfy', cursive;
 }
 /*# sourceMappingURL=main.css.map */
