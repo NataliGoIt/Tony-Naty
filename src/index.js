@@ -3,12 +3,10 @@ let audio = document.querySelector('.audio');
 
 
 
-let player = document.querySelector('.player'),
+const player = document.querySelector('.player'),
 playBtn = document.querySelector('.btn__play'),
 prevBtn = document.querySelector('.btn__prev'),
 nextBtn = document.querySelector('.btn__next'),
-btnStop  = document.querySelector('.btn__stop'),
-btnLpayPause = document.querySelector('.btn__play-fa'),
 
 progressContainer = document.querySelector('.progress__container'),
 progress = document.querySelector('.progress'),
@@ -59,26 +57,26 @@ music12 = document.querySelector('.music-12'),
 audio12 = document.querySelector('#audio12'),
 
 music13 = document.querySelector('.music-13'),
-audio13 = document.querySelector('#audio13'),
-playImgPlay = document.querySelector('play-img'),
-playImgPause = document.querySelector('pause')
+audio13 = document.querySelector('#audio13')
 
 
 music12.addEventListener('click', onAudioHG)
 function onAudioHG(){
+    songIndex = 0;
     audio.src = audio12.src;
     playSong();
     title.innerHTML = "22:22";
     onPlaulistBtnList();
-    songIndex = 0;
+    
 }
 music13.addEventListener('click', onAudioTh)
 function  onAudioTh(){
+    songIndex = 1;
     audio.src = audio13.src;
     playSong();
     title.innerHTML = "Feel So Good";
     onPlaulistBtnList();
-    songIndex = 1;
+   
 }
 
 // music1.addEventListener('click', onAudioOne);
@@ -98,11 +96,12 @@ function  onAudioTh(){
 // }
 music3.addEventListener('click', onAudioThree)
 function  onAudioThree(){
+    songIndex = 2;
     audio.src = audio3.src;
     playSong();
     title.innerHTML = "Ginger Snaps";
     onPlaulistBtnList();
-    songIndex = 2;
+    
 }
 music4.addEventListener('click', onAudiofour)
 function  onAudiofour(){
@@ -174,10 +173,53 @@ function  onAudioElemen(){
 
 
 const songs = [
-    audio12, audio13, audio3, audio4, audio5, audio6, audio7, audio8, audio9, audio10, audio11, 
+{
+    src: audio12.src,
+    title: "22:22"
+}, 
+{
+    src: audio13.src,
+    title: "Feel So Good"
+}, 
+{
+    src: audio3.src,
+    title: "Ginger Snaps"
+}, 
+{
+    src: audio4.src,
+    title: "Hazel Eyes"
+}, 
+{
+    src: audio5.src,
+    title: "Kosmos"
+},
+{
+    src: audio6.src,
+    title: "Major Lazer Style"
+},
+{
+    src: audio7.src,
+    title: "Rose Baby Rose"
+},
+{
+    src: audio8.src,
+    title: "Ruff Day"
+},  
+{
+    src: audio9.src,
+    title: "Lambada"
+},
+{
+    src: audio10.src,
+    title: "Dance 1"
+},
+{
+    src: audio11.src,
+    title: "Broken Heart"
+}, 
     ]
    
-console.log(songs);
+// console.log(songs);
 // песня по умолчанию
 
 let songIndex = 0;
@@ -186,7 +228,7 @@ let songIndex = 0;
 // init
 function lodaSong(song){
     audio.src= song.src;     
-    title.innerHTML = `${song.src}`;  
+    title.innerHTML = `${song.title}`;  
             
 }
 
