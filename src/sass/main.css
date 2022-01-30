@@ -188,7 +188,7 @@ body {
 .new__video {
   width: 250px;
   height: 180px;
-  border-radius: 50px 0px;
+  border-radius: 25px;
 }
 
 .video {
@@ -454,7 +454,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  max-width: 120px;
+  max-width: 200px;
   width: 100%;
   margin: 0 auto;
   margin-top: 45px;
@@ -467,10 +467,34 @@ body {
 }
 
 .btn__prev {
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  fill: rgba(255, 255, 255, 0.6);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(../images/prev.png);
+  cursor: pointer;
+}
+
+.btn__next {
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  fill: rgba(255, 255, 255, 0.6);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(../images/next.png);
   cursor: pointer;
 }
 
 .btn__play {
+  width: 45px;
+  height: 45px;
+  padding: 0;
+  fill: rgba(255, 255, 255, 0.6);
   cursor: pointer;
 }
 
@@ -486,24 +510,14 @@ body {
 }
 
 .pause {
-  width: 47px;
-  height: 47px;
+  width: 44px;
+  height: 44px;
   padding: 0;
+  fill: rgba(255, 255, 255, 0.6);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   background-image: url(../images/pause.png);
-  cursor: pointer;
-}
-
-.btn__next {
-  width: 44px;
-  height: 44px;
-  padding: 0;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-image: url(../images/stop.png);
   cursor: pointer;
 }
 

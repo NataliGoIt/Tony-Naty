@@ -1,10 +1,13 @@
 import './sass/main.scss';
 let audio = document.querySelector('.audio');
 
-const player = document.querySelector('.player'),
+
+
+let player = document.querySelector('.player'),
 playBtn = document.querySelector('.btn__play'),
 prevBtn = document.querySelector('.btn__prev'),
-btnStop  = document.querySelector('.btn__next'),
+nextBtn = document.querySelector('.btn__next'),
+btnStop  = document.querySelector('.btn__stop'),
 btnLpayPause = document.querySelector('.btn__play-fa'),
 
 progressContainer = document.querySelector('.progress__container'),
@@ -56,8 +59,9 @@ music12 = document.querySelector('.music-12'),
 audio12 = document.querySelector('#audio12'),
 
 music13 = document.querySelector('.music-13'),
-audio13 = document.querySelector('#audio13')
-
+audio13 = document.querySelector('#audio13'),
+playImgPlay = document.querySelector('play-img'),
+playImgPause = document.querySelector('pause')
 
 
 music12.addEventListener('click', onAudioHG)
@@ -66,6 +70,7 @@ function onAudioHG(){
     playSong();
     title.innerHTML = "22:22";
     onPlaulistBtnList();
+    songIndex = 0;
 }
 music13.addEventListener('click', onAudioTh)
 function  onAudioTh(){
@@ -73,6 +78,7 @@ function  onAudioTh(){
     playSong();
     title.innerHTML = "Feel So Good";
     onPlaulistBtnList();
+    songIndex = 1;
 }
 
 // music1.addEventListener('click', onAudioOne);
@@ -96,6 +102,7 @@ function  onAudioThree(){
     playSong();
     title.innerHTML = "Ginger Snaps";
     onPlaulistBtnList();
+    songIndex = 2;
 }
 music4.addEventListener('click', onAudiofour)
 function  onAudiofour(){
@@ -103,6 +110,7 @@ function  onAudiofour(){
     playSong();
     title.innerHTML = "Hazel Eyes";
     onPlaulistBtnList();
+    songIndex = 3;
 }
 
 music5.addEventListener('click', onAudioFive)
@@ -111,6 +119,7 @@ function  onAudioFive(){
     playSong();
     title.innerHTML = "Kosmos";
     onPlaulistBtnList();
+    songIndex = 4;
 }
 music6.addEventListener('click', onAudioSixe)
 function  onAudioSixe(){
@@ -118,6 +127,7 @@ function  onAudioSixe(){
     playSong();
     title.innerHTML = "Major Lazer style";
     onPlaulistBtnList();
+    songIndex = 5;
 }
 music7.addEventListener('click', onAudioSeven)
 function  onAudioSeven(){
@@ -125,6 +135,7 @@ function  onAudioSeven(){
     playSong();
     title.innerHTML = "Rose Baby Rose";
     onPlaulistBtnList();
+    songIndex = 6;
 }
 music8.addEventListener('click', onAudioEight)
 function  onAudioEight(){
@@ -132,6 +143,7 @@ function  onAudioEight(){
     playSong();
     title.innerHTML = "Ruff Day";
     onPlaulistBtnList();
+    songIndex = 7;
 }
 music9.addEventListener('click', onAudioNine)
 function  onAudioNine(){
@@ -139,6 +151,7 @@ function  onAudioNine(){
     playSong();
     title.innerHTML = "Lambada";
     onPlaulistBtnList();
+    songIndex = 8;
 }
 music10.addEventListener('click', onAudioTen)
 function  onAudioTen(){
@@ -146,6 +159,7 @@ function  onAudioTen(){
     playSong();
     title.innerHTML = "Dance 1";
     onPlaulistBtnList();
+    songIndex = 9;
 }
 music11.addEventListener('click', onAudioElemen)
 function  onAudioElemen(){
@@ -153,26 +167,28 @@ function  onAudioElemen(){
     playSong();
     title.innerHTML = "Broken Heart";
     onPlaulistBtnList();
+    songIndex = 10;
 }
 
 
-// const songs = [
- 
-// ]
 
-// console.log(songs);
+
+const songs = [
+    audio12, audio13, audio3, audio4, audio5, audio6, audio7, audio8, audio9, audio10, audio11, 
+    ]
+   
+console.log(songs);
 // песня по умолчанию
 
-// let songIndex = 2;
+let songIndex = 0;
 
 
 // init
-// function lodaSong(song){
-//     title.innerHTML = song;
-//     audio.src = `./audio/${song}.mp3`;
-//     audio.play();                             
-// }
-// lodaSong(songs[songIndex]);
+function lodaSong(song){
+    audio.src= song.src;     
+    title.innerHTML = `${song.src}`;  
+            
+}
 
 function playSong(){
     player.classList.add('play')
@@ -187,7 +203,7 @@ function playSong(){
 
 function pauseSong(){
     player.classList.remove('play')
-    cover.classList.remove('active')
+    cover.classList.remove('active')  
     audio.pause()
     if(playBtn.classList.contains('pause')){
         playBtn.classList.add('play-img')
@@ -202,28 +218,28 @@ playBtn.addEventListener('click', () =>{
         playSong()
     }
 })
-// nextBtn.addEventListener('click', nextSong)
-// function nextSong(){
-//     songIndex++
+nextBtn.addEventListener('click', nextSong)
+function nextSong(){
+    songIndex ++
 
-//     if(songIndex > songs.length -1){
-//         songIndex = 0
-//     }
+    if(songIndex > songs.length -1){
+        songIndex = 0
+    }
 
-//     lodaSong(songs[songIndex])
-//     playSong()
-// }
-// prevBtn.addEventListener('click', prevSong)
-// function prevSong(){
-//     songIndex--
+    lodaSong(songs[songIndex])
+    playSong()
+}
+prevBtn.addEventListener('click', prevSong)
+function prevSong(){
+    songIndex--
 
-//     if(songIndex < 0){
-//         songIndex = songs.length -1
-//     }
+    if(songIndex < 0){
+        songIndex = songs.length -1
+    }
 
-//     lodaSong(songs[songIndex])
-//     playSong()
-// }
+    lodaSong(songs[songIndex])
+    playSong()
+}
 
 function updateProgress(e){
 const {duration, currentTime} = e.srcElement
@@ -242,7 +258,7 @@ function setProgress(e){
 }
 progressContainer.addEventListener('click', setProgress)
 
-// audio.addEventListener('ended', nextSong)
+audio.addEventListener('ended', nextSong)
 
 musicBtnLpaylist.addEventListener('click', onPlaulistBtn)
  
@@ -259,11 +275,11 @@ function onPlaulistBtnList (){
     musicRight.classList.remove('music__block')
 }
 
-btnStop.addEventListener('click', onStop)
-function onStop(){
-    pauseSong();
-    audio.currentTime = 0;
-}
+// btnStop.addEventListener('click', onStop)
+// function onStop(){
+//     pauseSong();
+//     audio.currentTime = 0;
+// }
 // musicPlaylist.addEventListener('click', onClick)
 // function onClick(e){
 //     let elem = e.target;
