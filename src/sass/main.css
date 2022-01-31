@@ -189,8 +189,27 @@ body {
   max-width: 300px;
 }
 
+.about__title {
+  margin-bottom: 35px;
+}
+
 .about__description {
   font-size: 16px;
+}
+
+.about__ikon {
+  width: 20px;
+  height: 20px;
+  fill: rgba(255, 255, 255, 0.6);
+  cursor: pointer;
+}
+
+.about__ikon:hover, .about__ikon:focus {
+  fill: rgba(4, 0, 255, 0.829);
+}
+
+.about__contact {
+  margin-top: 30px;
 }
 
 .new {
