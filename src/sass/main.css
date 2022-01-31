@@ -187,6 +187,7 @@ body {
 
 .about__left {
   max-width: 300px;
+  margin: 0 auto;
 }
 
 .about__title {
@@ -198,17 +199,6 @@ body {
   line-height: 2;
 }
 
-.about__ikon {
-  width: 20px;
-  height: 20px;
-  fill: rgba(255, 255, 255, 0.6);
-  cursor: pointer;
-}
-
-.about__ikon:hover, .about__ikon:focus {
-  fill: rgba(4, 0, 255, 0.829);
-}
-
 .about__tell {
   text-align: right;
 }
@@ -218,7 +208,7 @@ body {
 }
 
 .about__contact-title {
-  color: rgba(4, 0, 255, 0.733);
+  color: rgba(3, 218, 197, 0.788);
   margin-bottom: 10px;
 }
 

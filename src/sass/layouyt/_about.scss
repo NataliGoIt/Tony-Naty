@@ -4,6 +4,7 @@
 }
 .about__left{
     max-width: 300px;
+    margin: 0 auto;
 }
 .about__title{
     margin-bottom: 35px;
@@ -12,16 +13,14 @@
     font-size: 16px;
     line-height: 2;
 }
-.about__ikon{
-    width: 20px;
-    height: 20px;
-    fill: rgba(255, 255, 255, 0.6);
-    cursor: pointer;
-    &:hover,
-    &:focus{
-     fill: rgba(4, 0, 255, 0.829);
-    }
-}
+
+// ======================right============
+// .about__right{
+//     display: none;
+// }
+
+
+
 .about__tell{
     text-align: right;
 }
@@ -29,7 +28,7 @@
     margin-top: 30px;
 }
 .about__contact-title{
-    color: rgba(4, 0, 255, 0.733);
+    color: rgba(3, 218, 197, 0.788);
     margin-bottom: 10px;
 }
 .about__contact-link{
@@ -57,3 +56,28 @@
         text-align: left;
     }
 }
+
+// @media screen and (min-width: 768px){
+//     .about__position{
+//         display: flex;
+//         align-items: center;
+//         justify-content: center;
+//     }
+//     .about__right{
+//         display: block;
+//         margin-left: 35px;
+//     }
+//     .about__img-first{
+//         width: 200px;
+//         height: 220px;
+//         border-radius: 10px;
+    
+//     }
+//     .about__img-second{
+//         width: 200px;
+//         height: 220px;
+//         border-radius: 10px;
+//         opacity: 50%;
+    
+//     }
+// }
