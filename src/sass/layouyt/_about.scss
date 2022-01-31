@@ -21,12 +21,38 @@
      fill: rgba(4, 0, 255, 0.829);
     }
 }
+.about__tell{
+    text-align: right;
+}
 .about__contact{
     margin-top: 30px;
 }
+.about__contact-title{
+    color: rgba(4, 0, 255, 0.733);
+    margin-bottom: 10px;
+}
+.about__contact-link{
+    font-style: normal;
+    color: inherit;
+    font-size: 16px;
+}
 
-// @media screen and (min-width: 480px){
-//     .about__left{
-//         max-width: 450px;
-//     }
-// }
+
+@media screen and (min-width: 480px){
+    // .about__left{
+    //     max-width: 450px;
+    // }
+    .about__contact-list{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .about__contact-item{
+        &:not(:last-child){
+            margin-right: 25px;
+        }
+    }
+    .about__tell{
+        text-align: left;
+    }
+}

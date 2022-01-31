@@ -208,8 +208,43 @@ body {
   fill: rgba(4, 0, 255, 0.829);
 }
 
+.about__tell {
+  text-align: right;
+}
+
 .about__contact {
   margin-top: 30px;
+}
+
+.about__contact-title {
+  color: rgba(4, 0, 255, 0.733);
+  margin-bottom: 10px;
+}
+
+.about__contact-link {
+  font-style: normal;
+  color: inherit;
+  font-size: 16px;
+}
+
+@media screen and (min-width: 480px) {
+  .about__contact-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .about__contact-item:not(:last-child) {
+    margin-right: 25px;
+  }
+  .about__tell {
+    text-align: left;
+  }
 }
 
 .new {
