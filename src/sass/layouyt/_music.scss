@@ -60,7 +60,7 @@ animation: rotateAnimation 3s linear infinite;
     text-align: center;
 }
 .progress__container{
-    background: rgba(187, 134, 252, 0.575);
+    background: #03a093;
     opacity: 0.24;
     border-radius: 5px;
     width: 100%;
@@ -71,7 +71,7 @@ animation: rotateAnimation 3s linear infinite;
     cursor: pointer;
 }
 .progress{
-    background: #03DAC5;
+    background: rgb(255, 255, 255);
     border-radius: 5px;
     height: 6px;
     // width: 158px;
@@ -184,14 +184,14 @@ animation: rotateAnimation 3s linear infinite;
     // }
     &:hover,
     &:focus{
-        background: rgba(187, 134, 252, 0.08);
-        color:  #BB86FC;
+        background: rgba(3, 160, 147, 0.507);
+        color:  #d0e0dffd;
         border-radius: 10px;
     }
 }
 
 .active-li{
-    background: rgba(187, 134, 252, 0.08);
+    background: rgba(3, 160, 147, 0.815);
     color:  #BB86FC;
     border-radius: 10px;
 }
