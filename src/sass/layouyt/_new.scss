@@ -52,6 +52,7 @@
 .new__text-title{
     color: #ffffff;
     margin-bottom: 50px;
+    font-size: 86px;
 }
 
 
@@ -66,8 +67,13 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
 }
-
+.new__right{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
 .video{
 margin-top: 0;
 margin: 0;
@@ -83,10 +89,10 @@ height: 250px;
     background-color: inherit;
 }
 .new__text{  
-    width: 250px;
-    height: 250px;
+    // width: 250px;
+    // height: 250px;
     margin: 0;
-    margin-right: 70px;
+    // margin-right: 70px;
 
 }
 .new__text-title{
