@@ -34,12 +34,9 @@ a {
 }
 
 body {
-  background-color: #292929;
+  background-color: #171717;
   font-family: "Roboto", sans-serif;
-  font-weight: 400;
-  font-size: 18px;
-  letter-spacing: 1.5px;
-  color: rgba(255, 255, 255, 0.87);
+  color: rgba(255, 255, 255, 0.788);
   margin: 0;
 }
 
@@ -112,10 +109,11 @@ body {
 }
 
 .header__nav-link {
-  font-weight: 700;
-  font-size: 12px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
   padding: 10px;
-  color: rgba(255, 255, 255, 0.87);
+  color: rgba(255, 255, 255, 0.555);
   font-style: normal;
 }
 
@@ -132,14 +130,13 @@ body {
 }
 
 .hero {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(73, 73, 73, 0.5)), color-stop(92.19%, #0e0e11)), url(../images/03.png);
-  background-image: linear-gradient(180deg, rgba(73, 73, 73, 0.5) 0%, #0e0e11 92.19%), url(../images/03.png);
-  background-image: opa;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(90, 89, 89, 0.5)), color-stop(34.19%, rgba(5, 5, 5, 0.925))), url(../images/begnew.jpg);
+  background-image: linear-gradient(180deg, rgba(90, 89, 89, 0.5) 0%, rgba(5, 5, 5, 0.925) 34.19%), url(../images/begnew.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  padding-top: 250px;
-  padding-bottom: 120px;
+  padding-top: 178px;
+  padding-bottom: 168px;
   text-align: center;
   max-width: 1600px;
   margin: 0 auto;
@@ -156,14 +153,19 @@ body {
 
 .hero__title {
   font-family: 'Trade Winds', cursive;
+  font-weight: 500;
   font-size: 50px;
+  line-height: 100px;
+  color: rgba(255, 255, 255, 0.9);
   margin-bottom: 50px;
   margin-top: 40px;
   text-shadow: 0px 0px 50px #1d1d1d;
 }
 
 .hero__description {
-  font-size: 8px;
+  font-size: 18px;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.55);
   padding-left: 80px;
   text-align: right;
   color: rgba(170, 169, 169, 0.5);
@@ -176,7 +178,7 @@ body {
 
 @media screen and (min-width: 768px) {
   .hero {
-    padding-top: 180px;
+    padding-top: 150px;
     padding-bottom: 120px;
   }
   .hero__iam {
@@ -213,7 +215,7 @@ body {
   }
   .hero__iam {
     font-size: 18px;
-    padding-left: 120px;
+    padding-left: 40px;
     text-align: left;
     padding-right: 120px;
     letter-spacing: 5px;
@@ -221,18 +223,24 @@ body {
   }
   .hero__title {
     font-family: 'Trade Winds', cursive;
-    letter-spacing: 25px;
+    letter-spacing: 6px;
     font-size: 130px;
     margin-bottom: 50px;
-    margin-top: 40px;
-    padding-left: 40px;
+    margin-top: 50px;
     text-shadow: 0px 0px 50px #1d1d1d;
+  }
+  .hero__position {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .hero__description {
     font-size: 18px;
-    padding-left: 80px;
     text-align: right;
-    padding-right: 80px;
+    padding-right: 20px;
     letter-spacing: 5px;
     color: rgba(170, 169, 169, 0.5);
   }
@@ -242,9 +250,41 @@ body {
   }
 }
 
+.social__container {
+  background: rgba(44, 53, 61, 0.2);
+  -webkit-backdrop-filter: blur(50px);
+          backdrop-filter: blur(50px);
+  border-radius: 25px;
+  padding-top: 64px;
+  padding-bottom: 64px;
+  position: relative;
+}
+
+.social__social-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.social__social-link {
+  font-style: normal;
+  color: inherit;
+}
+
+.social__social-link:focus, .social__social-link:hover {
+  color: #FF6E30;
+}
+
 .about {
-  padding-top: 120px;
-  padding-bottom: 100px;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
 .about__left {
@@ -254,13 +294,19 @@ body {
 
 .about__title {
   text-align: center;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 130%;
+  color: rgba(255, 255, 255, 0.9);
   margin-bottom: 35px;
 }
 
 .about__description {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.6;
   text-align: center;
-  font-size: 16px;
-  line-height: 2;
+  color: rgba(255, 255, 255, 0.726);
 }
 
 .about__tell {
@@ -311,14 +357,14 @@ body {
 }
 
 .new {
-  padding-top: 130px;
-  padding-bottom: 40px;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
 .new__video {
   width: 250px;
   height: 180px;
-  border-radius: 25px;
+  border-radius: 10px;
 }
 
 .video {
@@ -361,41 +407,24 @@ body {
 }
 
 .new__text {
-  width: 250px;
   text-align: left;
-  padding-left: 20px;
   color: rgba(255, 255, 255, 0.705);
   margin: 0 auto;
-}
-
-.new__text-title {
-  color: #ffffff;
-  margin-bottom: 50px;
-  font-size: 86px;
 }
 
 @media screen and (min-width: 768px) {
   .new__social-title {
     display: block;
-    font-weight: 700;
-    font-size: 20px;
+    font-size: 24px;
+    color: rgba(255, 255, 255, 0.555);
   }
-  .flex {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    position: relative;
-  }
-  .new__right {
-    position: absolute;
-    top: 0;
-    right: 0;
+  .new__text-description {
+    font-weight: 500;
+    font-size: 42px;
+    line-height: 1.6;
+    letter-spacing: 3px;
+    color: transparent;
+    -webkit-text-stroke: 1px rgba(255, 255, 255, 0.747);
   }
   .video {
     margin-top: 0;
@@ -404,7 +433,7 @@ body {
     height: 250px;
   }
   .link__svg-sl {
-    fill: #ffffff;
+    fill: rgba(255, 255, 255, 0.555);
     width: 70px;
     height: 40px;
   }
@@ -413,9 +442,15 @@ body {
   }
   .new__text {
     margin: 0;
+    text-align: center;
   }
   .new__text-title {
-    margin-top: 15px;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 130%;
+    color: transparent;
+    margin-bottom: 25px;
+    -webkit-text-stroke: 1px rgba(255, 255, 255, 0.747);
   }
   .new__video {
     width: 300px;
@@ -433,26 +468,24 @@ body {
             justify-content: center;
   }
   .new__social {
-    margin-top: 60px;
+    margin-top: 20px;
   }
 }
 
 @media screen and (min-width: 1024px) {
   .video {
-    width: 350px;
-    height: 250px;
+    width: 550px;
+    height: 350px;
+    margin: 0 auto;
+    margin-top: 60px;
   }
   .new__video {
-    width: 350px;
-    height: 250px;
-  }
-  .new__text {
-    width: 250px;
-    height: 300px;
-    margin-right: 90px;
+    width: 550px;
+    height: 350px;
   }
   .new__text-title {
-    margin-top: 40px;
+    font-size: 55px;
+    letter-spacing: 12px;
   }
 }
 
@@ -478,15 +511,12 @@ body {
 .music {
   padding-top: 50px;
   padding-bottom: 150px;
-  background-color: #292929;
   color: rgba(255, 255, 255, 0.6);
 }
 
 .music__position {
   padding-top: 20px;
   padding-bottom: 20px;
-  background: -webkit-gradient(linear, left bottom, left top, from(rgba(255, 255, 255, 0.12)), to(rgba(255, 255, 255, 0.12))), #121212;
-  background: linear-gradient(0deg, rgba(255, 255, 255, 0.12), rgba(255, 255, 255, 0.12)), #121212;
   -webkit-box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.14), 0px 3px 14px rgba(0, 0, 0, 0.12), 0px 5px 5px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.14), 0px 3px 14px rgba(0, 0, 0, 0.12), 0px 5px 5px rgba(0, 0, 0, 0.2);
 }
@@ -539,7 +569,7 @@ body {
   width: 180px;
   height: 180px;
   border-radius: 50%;
-  fill: #292929;
+  fill: transparent;
   stroke: rgba(255, 255, 255, 0.6);
 }
 
@@ -775,8 +805,6 @@ body {
             align-items: center;
     -ms-flex-pack: distribute;
         justify-content: space-around;
-    background: -webkit-gradient(linear, left bottom, left top, from(rgba(255, 255, 255, 0.12)), to(rgba(255, 255, 255, 0.12))), #121212;
-    background: linear-gradient(0deg, rgba(255, 255, 255, 0.12), rgba(255, 255, 255, 0.12)), #121212;
     -webkit-box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.14), 0px 3px 14px rgba(0, 0, 0, 0.12), 0px 5px 5px rgba(0, 0, 0, 0.2);
             box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.14), 0px 3px 14px rgba(0, 0, 0, 0.12), 0px 5px 5px rgba(0, 0, 0, 0.2);
   }

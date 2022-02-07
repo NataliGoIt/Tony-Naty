@@ -1,0 +1,33 @@
+// .social{
+// }
+.social__container{
+    background: rgba(44, 53, 61, 0.2);
+    backdrop-filter: blur(50px);
+    border-radius: 25px;
+    padding-top: 64px;
+    padding-bottom: 64px;
+    position: relative;
+}
+// .elips{
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+//     width: 159px;
+// height: 159px;
+// background: rgba(255, 72, 66, 0.4);
+// filter: blur(100px);
+// }
+.social__social-list{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.social__social-link{
+    font-style: normal;
+    color: inherit;
+    &:focus,
+    &:hover{
+        color:  #FF6E30;
+    }
+}

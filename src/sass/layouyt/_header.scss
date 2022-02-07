@@ -2,6 +2,7 @@
     position: absolute;
     top: 0;
     left: 0;
+    // background-color: rgba(8, 9, 10, 0.836);
     width: 100%;
     padding-top: 42px;
     padding-bottom: 40px;
@@ -23,10 +24,11 @@
     
   }
   .header__nav-link{
-    font-weight: 700;
-    font-size: 12px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
     padding: 10px;
-    color: rgba(255, 255, 255, 0.87);
+    color: rgba(255, 255, 255, 0.555);
     font-style: normal;
     &:hover,
     &:focus{
