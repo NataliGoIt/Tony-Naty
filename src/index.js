@@ -18,7 +18,7 @@ musicPlaylist = document.querySelector('.music__playlist'),
 musicLeft = document.querySelector('.music__left'),
 musicRight = document.querySelector('.music__right'),
 musicBtnLpaylist = document.querySelector('.music__playlist-list'),
-
+videoNew = document.querySelectorAll('.new__video'),
 
 // music1 = document.querySelector('.music-1'),
 // audio1 = document.querySelector('#audio1'),
@@ -58,6 +58,12 @@ audio12 = document.querySelector('#audio12'),
 
 music13 = document.querySelector('.music-13'),
 audio13 = document.querySelector('#audio13')
+
+// videoIndex = 0;
+
+// lodaSong(songs[songIndex])
+// console.log(videoNew);
+// videoNew.forEach
 
 
 music12.addEventListener('click', onAudioHG)

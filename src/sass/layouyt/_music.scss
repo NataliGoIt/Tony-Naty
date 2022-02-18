@@ -89,7 +89,9 @@ animation: rotateAnimation 3s linear infinite;
 .music__btn-svg{
     width: 45px;
     height: 45px;
-    fill: rgba(255, 255, 255, 0.6);
+    fill: #24272C;
+box-shadow: -18px -18px 36px rgba(255, 255, 255, 0.48), 18px 18px 36px rgba(0, 0, 0, 0.33), inset 0px 4px 42px rgba(0, 0, 0, 0.06);
+border-radius: 40px;
 }
 
 .btn__prev{
@@ -234,12 +236,16 @@ animation: rotateAnimation 3s linear infinite;
     width: 25px;
     height: 25px;
     padding: 10px;
-    fill: rgba(255, 255, 255, 0.6);
+    fill: rgba(235, 235, 245, 0.363);
+    background: #24272C;
+box-shadow: 0 0 4px rgba(255, 255, 255, 0.25), 2px 2px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 40px;
     &:hover,
     &:focus{
-        background: rgba(3, 218, 198, 0.12);
-  border-radius: 50px;
-  fill: #03DAC5;
+        fill: #2FB8FF;
+        background: #24272C;
+box-shadow: inset -6px -6px 12px rgba(255, 255, 255, 0.25), inset 6px 6px 12px rgba(0, 0, 0, 0.25);
+border-radius: 40px;
 }
 }
 @media screen and (min-width: 768px){
