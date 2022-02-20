@@ -87,8 +87,28 @@ body {
   padding-bottom: 40px;
 }
 
+.header__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .header__nav {
-  height: 143px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .header__nav-list {
@@ -129,8 +149,13 @@ body {
 }
 
 .hero {
-  padding-top: 178px;
-  padding-bottom: 168px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero.jpg);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 250px;
+  padding-bottom: 130px;
   text-align: center;
   max-width: 1600px;
   margin: 0 auto;
@@ -139,149 +164,19 @@ body {
   background-color: var(--hero-background-color);
 }
 
-.hero__social-left {
-  position: absolute;
-  bottom: 0;
-  left: 60px;
-  width: 100%;
-  -webkit-transform-origin: left top;
-          transform-origin: left top;
-  -webkit-transform: rotate(-90deg) translateX(-18px);
-          transform: rotate(-90deg) translateX(-18px);
-  border-bottom: solid 1px rgba(255, 255, 255, 0.5);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-}
-
-.hero__social-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.hero__social-item:not(:last-child) {
-  margin-right: 20px;
-}
-
-.hero__social-link {
-  color: inherit;
-  font-style: normal;
-}
-
-.hero__iam {
-  font-size: 10px;
-  text-align: left;
-  letter-spacing: 5px;
-  color: var(--color-text);
-}
-
 .hero__title {
-  font-family: 'Trade Winds', cursive;
-  font-weight: 500;
-  font-size: 50px;
-  line-height: 100px;
-  color: var(--color-title);
-  margin-bottom: 50px;
-  margin-top: 40px;
-  text-shadow: 0px 0px 50px #1d1d1d;
+  font-size: 150px;
 }
 
 .hero__description {
-  font-size: 18px;
+  font-size: 40px;
   line-height: 1.6;
-  color: var(--color-text);
-  padding-left: 80px;
-  text-align: right;
 }
 
-.hero__text-box {
-  max-width: 280px;
-  margin: 0 auto;
-}
-
-@media screen and (min-width: 768px) {
-  .hero {
-    padding-top: 150px;
-    padding-bottom: 120px;
-  }
-  .hero__iam {
-    font-size: 18px;
-    padding-left: 40px;
-    text-align: left;
-    letter-spacing: 5px;
-    color: var(--color-text);
-  }
-  .hero__title {
-    font-family: 'Trade Winds', cursive;
-    font-size: 130px;
-    margin-bottom: 50px;
-    margin-top: 40px;
-    color: var(--color-title);
-    text-shadow: 0px 0px 50px #1d1d1d;
-  }
-  .hero__description {
-    font-size: 18px;
-    padding-left: 80px;
-    text-align: right;
-    letter-spacing: 5px;
-    color: var(--color-text);
-  }
-  .hero__text-box {
-    max-width: 700px;
-    margin: 0 auto;
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  .hero {
-    padding-top: 200px;
-    padding-bottom: 120px;
-  }
-  .hero__iam {
-    font-size: 18px;
-    padding-left: 40px;
-    text-align: left;
-    padding-right: 120px;
-    letter-spacing: 5px;
-    color: var(--color-text);
-  }
-  .hero__title {
-    font-family: 'Trade Winds', cursive;
-    letter-spacing: 6px;
-    font-size: 130px;
-    margin-bottom: 50px;
-    margin-top: 50px;
-    text-shadow: 0px 0px 50px #1d1d1d;
-  }
-  .hero__position {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .hero__description {
-    font-size: 18px;
-    text-align: right;
-    padding-right: 20px;
-    letter-spacing: 5px;
-    color: var(--color-text);
-  }
-  .hero__text-box {
-    max-width: 1000px;
-    margin: 0 auto;
-  }
+.link__svg-hero {
+  width: 60px;
+  height: 60px;
+  margin-top: 150px;
 }
 
 .social__container {
