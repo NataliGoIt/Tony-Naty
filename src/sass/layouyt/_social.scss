@@ -1,5 +1,5 @@
 .social{
-    background-color: var(--video-background-color);
+    background-color: #636363;
 }
 .social__container{
     // background: var(--social-background-color);
@@ -15,6 +15,10 @@
     height: 30px;
     padding: 10px;
     fill: #00C4F0;
+    &:focus,
+    &:hover{
+        fill:  var(--color-hover-focus);
+    }
 }
 .social__span{
     display: block;
@@ -43,7 +47,7 @@ width: 150px;
 height: 120px;
 
     &:not(:last-child){
-        margin-right: 15px;
+        margin-right: 10px;
     }
 }
 .social__social-link{
