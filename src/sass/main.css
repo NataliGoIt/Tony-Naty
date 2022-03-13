@@ -281,7 +281,7 @@ body {
   padding-bottom: 200px;
 }
 
-.about__left {
+.about__position {
   max-width: 290px;
   margin: 0 auto;
 }
@@ -303,50 +303,27 @@ body {
   color: rgba(255, 255, 255, 0.726);
 }
 
-.about__tell {
-  text-align: right;
-  margin-bottom: 30px;
+.about__contacts {
+  margin-top: 35px;
 }
 
-.about__contact {
-  margin-top: 40px;
+.about__cont-item:not(:last-child) {
+  margin-bottom: 20px;
 }
 
-.about__contact-title {
-  color: rgba(3, 218, 197, 0.788);
-  margin-bottom: 30px;
-}
-
-.about__contact-link {
+.about__cont-link {
+  color: rgba(255, 255, 255, 0.904);
   font-style: normal;
-  color: inherit;
-  font-size: 16px;
+  font-size: 12px;
+}
+
+.about__mail {
+  text-align: right;
 }
 
 @media screen and (min-width: 768px) {
-  .about__left {
+  .about__position {
     max-width: 680px;
-  }
-  .about__contact-list {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  .about__contact-item:not(:last-child) {
-    margin-right: 50px;
-  }
-  .about__tell {
-    text-align: left;
-    margin-bottom: 0;
-  }
-  .about__mail {
-    text-align: right;
   }
 }
 
