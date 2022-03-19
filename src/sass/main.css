@@ -157,64 +157,85 @@ body {
 }
 
 .hero__title {
-  font-size: 90px;
+  display: none;
+  font-size: 40px;
   font-family: 'Amita', cursive;
 }
 
-.hero__position {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
 .hero__hello {
-  font-weight: 600;
-  font-size: 48px;
-  line-height: 54px;
-  margin-bottom: 20px;
+  display: none;
 }
 
 .hero__iam {
-  font-weight: bold;
-  font-size: 72px;
-  line-height: 82px;
+  display: none;
 }
 
 .hero__description {
-  font-weight: 600;
-  font-size: 24px;
-  line-height: 54px;
+  display: none;
 }
 
-.hero__btn {
-  padding: 14px 40px;
-  background: linear-gradient(87.32deg, #E2A300 4.47%, #E29500 95.53%);
-  border: none;
-  -webkit-box-shadow: 0px 2px 13px rgba(226, 158, 0, 0.48);
-          box-shadow: 0px 2px 13px rgba(226, 158, 0, 0.48);
-  border-radius: 6px;
-  margin-top: 30px;
-  margin-left: 230px;
-  cursor: pointer;
-}
-
-.hero__left {
-  max-width: 450px;
-  text-align: left;
+.hero__img {
+  width: 290px;
+  height: 320px;
 }
 
 .link__svg-hero {
-  width: 60px;
-  height: 60px;
-  margin-left: 200px;
-  margin-top: 100px;
-  opacity: 70%;
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .hero__position {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .hero__title {
+    font-size: 90px;
+  }
+  .hero__hello {
+    display: block;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 54px;
+    margin-bottom: 20px;
+  }
+  .hero__img {
+    width: 490px;
+    height: 500px;
+  }
+  .hero__left {
+    max-width: 450px;
+    text-align: left;
+  }
+  .link__svg-hero {
+    display: block;
+    width: 60px;
+    height: 60px;
+    margin-left: 200px;
+    margin-top: 100px;
+    opacity: 70%;
+  }
+  .hero__iam {
+    display: block;
+    font-weight: bold;
+    font-size: 72px;
+    line-height: 82px;
+  }
+  .hero__description {
+    display: block;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 54px;
+  }
 }
 
 .social {
