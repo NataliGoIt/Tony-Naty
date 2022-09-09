@@ -1,72 +1,38 @@
-.about{
-    background-color: var(--video-background-color);
-    padding-top: 150px;
-    padding-bottom: 150px;
+.about {
+  // background-color: aqua;
+  min-height: 560px;
 }
-.about__position{
-    max-width: 290px;
+@media screen and (min-width: 1024px) {
+  .about__position {
+    display: flex;
+    align-items: center;
+  }
+  .about__social-box {
+    display: flex;
+    align-items: center;
+  }
+  // ===================text==================
+  .about__text-box {
+    max-width: 450px;
+  }
+  // .about__title{
+
+  // }
+  // .about__description{
+
+  // }
+  // ------------------button-----------------
+  // .about__btn{
+
+  // }
+  // -------------------img------------------
+  .about__img-box {
     margin: 0 auto;
+  }
+  // -------------------social-link------------
+  .about__social-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
-.about__title{
-    text-align: center;
-    font-weight: 500;
-font-size: 48px;
-line-height: 130%;
-color: rgba(255, 255, 255, 0.9);
-    margin-bottom: 35px;
-}
-.about__description{
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 1.6;
-    text-align: center;
-    color: rgba(255, 255, 255, 0.726);
-}
-// =========contacts
-.about__contacts{
-    margin-top: 45px;
-}
-.about__cont-item{
-    &:not(:last-child){
-        margin-bottom: 25px;
-    }
-}
-.about__cont-link{
-    color: rgba(255, 255, 255, 0.596);
-    font-style: normal;  
-    font-size: 18px;
-}
-.about__mail{
-    text-align: right;
-}
-
-
-@media screen and (min-width: 768px){
-    .about__position{
-        max-width: 680px;
-    }
-    .about__cont-list{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    .about__cont-item{
-        &:not(:last-child){
-            margin-bottom: 0;
-            margin-right: 50px;
-        }
-    }
-    .about__cont-link{
-        color: rgba(255, 255, 255, 0.596);
-        font-style: normal;  
-        font-size: 18px;
-    }
-    .about__mail{
-        text-align: left;
-    }
-}
-
-// @media screen and (min-width: 1024px){
-
-
-// }
