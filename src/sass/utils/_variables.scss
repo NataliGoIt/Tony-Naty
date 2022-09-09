@@ -1,17 +1,16 @@
-:root{
-    --hero-background-color: #121618;
-    --social-background-color: rgba(44, 53, 61, 0.2);
-    --video-background-color: #212121;
-    --about-background-color: #171717;
-    --trecks-background-color: #212121;
-    --footer-background-color: #171717;
+:root {
+  --hero-background-color: #121618;
+  --social-background-color: rgba(44, 53, 61, 0.2);
+  --video-background-color: #212121;
+  --about-background-color: #171717;
+  --trecks-background-color: #212121;
+  --footer-background-color: #171717;
 
-    --color-title: rgba(170, 169, 169, 0.973);
-    --color-text:rgba(170, 169, 169, 0.5);
+  --color-title: rgba(255, 255, 255, 0.973);
+  --color-text: rgba(170, 169, 169, 0.5);
 
+  --color-hover-focus: #fac564;
 
-    --color-hover-focus: #fac564;
-
-    --play-btn: url(../images/play.png);
-    --pause-btn: url(../images/pause.png);
+  --play-btn: url(../images/play.png);
+  --pause-btn: url(../images/pause.png);
 }

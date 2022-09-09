@@ -168,6 +168,9 @@ body {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
   .about__social-box {
     display: -webkit-box;
@@ -180,8 +183,37 @@ body {
   .about__text-box {
     max-width: 450px;
   }
-  .about__img-box {
+  .about__title {
+    font-size: 60px;
+    line-height: 80px;
+    letter-spacing: -0.5%;
+    margin-bottom: 36px;
+  }
+  .about__description {
+    font-size: 22px;
+    margin-bottom: 36px;
+  }
+  .about__btn {
+    display: block;
     margin: 0 auto;
+    padding: 10px 82px;
+    border: 2px solid #ffffff;
+    border-radius: 25px;
+    background: none;
+    color: #ffffff;
+    margin-bottom: 36px;
+  }
+  .about__img-box {
+    position: relative;
+    width: 430px;
+    height: 650px;
+  }
+  .about__img {
+    width: 430px;
+    height: 650px;
+    position: absolute;
+    top: 0;
+    right: 0;
   }
   .about__social-list {
     display: -webkit-box;
@@ -200,12 +232,33 @@ body {
   min-height: 560px;
 }
 
+@media screen and (min-width: 1024px) {
+  .video__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .video__title {
+    font-size: 60px;
+    line-height: 80px;
+    letter-spacing: -0.5%;
+  }
+}
+
 .new {
   background-color: blueviolet;
   min-height: 560px;
 }
 
 @media screen and (min-width: 1024px) {
+  .music__title {
+    font-size: 60px;
+    line-height: 80px;
+    letter-spacing: -0.5%;
+  }
   .music__item:not(:last-child) {
     margin-bottom: 20px;
   }
@@ -241,6 +294,24 @@ body {
   min-height: 200px;
 }
 
+.footer__rights-box {
+  border-top: 1px solid #ffffff;
+  text-align: center;
+}
+
+@media screen and (min-width: 1024px) {
+  .footer__position {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+}
+
 :root {
   --hero-background-color: #121618;
   --social-background-color: rgba(44, 53, 61, 0.2);
@@ -248,8 +319,8 @@ body {
   --about-background-color: #171717;
   --trecks-background-color: #212121;
   --footer-background-color: #171717;
-  --color-title: rgba(170, 169, 169, 0.973);
-  --color-text:rgba(170, 169, 169, 0.5);
+  --color-title: rgba(255, 255, 255, 0.973);
+  --color-text: rgba(170, 169, 169, 0.5);
   --color-hover-focus: #fac564;
   --play-btn: url(../images/play.png);
   --pause-btn: url(../images/pause.png);

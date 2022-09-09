@@ -6,6 +6,7 @@
   .about__position {
     display: flex;
     align-items: center;
+    justify-content: space-between;
   }
   .about__social-box {
     display: flex;
@@ -15,19 +16,41 @@
   .about__text-box {
     max-width: 450px;
   }
-  // .about__title{
-
-  // }
-  // .about__description{
-
-  // }
+  .about__title {
+    font-size: 60px;
+    line-height: 80px;
+    letter-spacing: -0.5%;
+    margin-bottom: 36px;
+  }
+  .about__description {
+    font-size: 22px;
+    // line-height: 80px;
+    // letter-spacing: -0.5%;
+    margin-bottom: 36px;
+  }
   // ------------------button-----------------
-  // .about__btn{
-
-  // }
+  .about__btn {
+    display: block;
+    margin: 0 auto;
+    padding: 10px 82px;
+    border: 2px solid #ffffff;
+    border-radius: 25px;
+    background: none;
+    color: #ffffff;
+    margin-bottom: 36px;
+  }
   // -------------------img------------------
   .about__img-box {
-    margin: 0 auto;
+    position: relative;
+    width: 430px;
+    height: 650px;
+  }
+  .about__img {
+    width: 430px;
+    height: 650px;
+    position: absolute;
+    top: 0;
+    right: 0;
   }
   // -------------------social-link------------
   .about__social-list {

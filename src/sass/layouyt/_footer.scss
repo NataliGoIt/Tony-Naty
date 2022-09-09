@@ -1,4 +1,15 @@
-.footer{
-    background-color: brown;
-    min-height: 200px;
+.footer {
+  background-color: brown;
+  min-height: 200px;
+}
+.footer__rights-box {
+  border-top: 1px solid #ffffff;
+  text-align: center;
+}
+@media screen and (min-width: 1024px) {
+  .footer__position {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
 }

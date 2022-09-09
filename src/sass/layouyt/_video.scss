@@ -2,3 +2,14 @@
   // background-color: bisque;
   min-height: 560px;
 }
+@media screen and (min-width: 1024px) {
+  .video__list {
+    display: flex;
+    align-items: center;
+  }
+  .video__title {
+    font-size: 60px;
+    line-height: 80px;
+    letter-spacing: -0.5%;
+  }
+}

@@ -1,8 +1,16 @@
 // .music {
 //   background-color: #000;
 // }
+// .music__title{
+
+// }
 @media screen and (min-width: 1024px) {
   // ----------------------basic-----------------
+  .music__title {
+    font-size: 60px;
+    line-height: 80px;
+    letter-spacing: -0.5%;
+  }
   //   .music__list {
   //
   //   }
