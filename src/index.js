@@ -1,4 +1,33 @@
 import './sass/main.scss';
+const swiper = new Swiper('.swiper', {
+  // Optional parameters
+
+  loop: true,
+
+  effect: 'coverflow',
+  grabCursor: true,
+  centeredSlides: true,
+  slidesPerView: 'auto',
+  coverflowEffect: {
+    rotate: 0,
+    stretch: 0,
+    depth: 100,
+    modifier: 1,
+    // slideShadows: true,
+  },
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+    dynamicBullets: true,
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+});
 // let audioList = document.querySelectorAll('.music__item');
 // console.log(audioList);
 // function opa(...elm) {

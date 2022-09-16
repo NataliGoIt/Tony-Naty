@@ -254,9 +254,10 @@ body {
             align-items: center;
   }
   .video__title {
-    font-size: 60px;
-    line-height: 80px;
+    font-size: 80px;
+    line-height: 1.3;
     letter-spacing: -0.5%;
+    margin-bottom: 80px;
   }
   .video__item {
     width: 450px;
@@ -275,6 +276,47 @@ body {
 .new {
   background-color: blueviolet;
   min-height: 560px;
+}
+
+.swiper {
+  width: 950px;
+  height: 500px;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 550px;
+  height: 450px;
+  border-radius: 10px;
+}
+
+.swiper-pagination-bullet {
+  background-color: rgba(255, 255, 255, 0.719);
+  width: 30px;
+  height: 10px;
+  border-radius: 10px;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  color: #fff;
+}
+
+.swiper-button-prev {
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 90px;
+  background-color: rgba(13, 14, 14, 0.596);
+}
+
+.swiper-button-next {
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 90px;
+  background-color: rgba(13, 14, 14, 0.596);
 }
 
 @media screen and (min-width: 1024px) {
