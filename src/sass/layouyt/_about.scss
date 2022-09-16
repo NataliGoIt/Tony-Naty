@@ -18,14 +18,13 @@
   }
   .about__title {
     font-size: 60px;
-    line-height: 80px;
+    line-height: 1.33;
     letter-spacing: -0.5%;
     margin-bottom: 36px;
   }
   .about__description {
     font-size: 22px;
-    // line-height: 80px;
-    // letter-spacing: -0.5%;
+    line-height: 1.33;
     margin-bottom: 36px;
   }
   // ------------------button-----------------
@@ -37,7 +36,7 @@
     border-radius: 25px;
     background: none;
     color: #ffffff;
-    margin-bottom: 36px;
+    margin-bottom: 48px;
   }
   // -------------------img------------------
   .about__img-box {
@@ -46,16 +45,29 @@
     height: 650px;
   }
   .about__img {
-    width: 430px;
-    height: 650px;
+    width: 450px;
+    height: 700px;
     position: absolute;
     top: 0;
-    right: 0;
+    right: 5%;
   }
   // -------------------social-link------------
+  .about__social-title {
+    font-size: 20px;
+    margin-right: 25px;
+  }
   .about__social-list {
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+  .about__social-item {
+    &:not(:last-child) {
+      margin-right: 15px;
+    }
+  }
+  .about__social-link {
+    font-style: normal;
+    color: rgba(255, 255, 255, 0.815);
   }
 }

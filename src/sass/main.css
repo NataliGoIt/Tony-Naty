@@ -185,12 +185,13 @@ body {
   }
   .about__title {
     font-size: 60px;
-    line-height: 80px;
+    line-height: 1.33;
     letter-spacing: -0.5%;
     margin-bottom: 36px;
   }
   .about__description {
     font-size: 22px;
+    line-height: 1.33;
     margin-bottom: 36px;
   }
   .about__btn {
@@ -201,7 +202,7 @@ body {
     border-radius: 25px;
     background: none;
     color: #ffffff;
-    margin-bottom: 36px;
+    margin-bottom: 48px;
   }
   .about__img-box {
     position: relative;
@@ -209,11 +210,15 @@ body {
     height: 650px;
   }
   .about__img {
-    width: 430px;
-    height: 650px;
+    width: 450px;
+    height: 700px;
     position: absolute;
     top: 0;
-    right: 0;
+    right: 5%;
+  }
+  .about__social-title {
+    font-size: 20px;
+    margin-right: 25px;
   }
   .about__social-list {
     display: -webkit-box;
@@ -225,6 +230,13 @@ body {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+  .about__social-item:not(:last-child) {
+    margin-right: 15px;
+  }
+  .about__social-link {
+    font-style: normal;
+    color: rgba(255, 255, 255, 0.815);
   }
 }
 
@@ -246,6 +258,18 @@ body {
     line-height: 80px;
     letter-spacing: -0.5%;
   }
+  .video__item {
+    width: 450px;
+    height: 400px;
+  }
+  .video__img {
+    width: 100%;
+    height: 100%;
+  }
+  .main {
+    width: 500px;
+    height: 450px;
+  }
 }
 
 .new {
@@ -255,12 +279,53 @@ body {
 
 @media screen and (min-width: 1024px) {
   .music__title {
+    margin-bottom: 32px;
     font-size: 60px;
     line-height: 80px;
     letter-spacing: -0.5%;
   }
+  .music__item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 10px 15px;
+    background-color: rgba(104, 104, 104, 0.301);
+    border-radius: 10px;
+  }
   .music__item:not(:last-child) {
     margin-bottom: 20px;
+  }
+  .music__btn {
+    padding: 0;
+    border: none;
+    background: none;
+    width: 26px;
+    height: 26px;
+    margin-right: 20px;
+  }
+  .music__btn-play {
+    width: 100%;
+    height: 100%;
+  }
+  .music__item-more {
+    margin-left: auto;
+    padding: 0;
+    border: none;
+    background: none;
+    width: 22px;
+    height: 20px;
+  }
+  .music__btn-more {
+    width: 100%;
+    height: 100%;
+    fill: rgba(255, 255, 255, 0.692);
+  }
+  .music__audio-title {
+    font-size: 20px;
+    margin-bottom: 5px;
   }
   .music__first-album {
     margin-left: auto;
@@ -290,8 +355,8 @@ body {
 }
 
 .footer {
-  background-color: brown;
-  min-height: 200px;
+  padding-top: 60px;
+  padding-bottom: 20px;
 }
 
 .footer__rights-box {
