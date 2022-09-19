@@ -3,7 +3,7 @@
   min-height: 560px;
 }
 .swiper {
-  width: 950px;
+  width: 994px;
   height: 500px;
 }
 .swiper-slide {
@@ -36,4 +36,30 @@
   height: 100%;
   width: 90px;
   background-color: rgba(13, 14, 14, 0.596);
+}
+.swiper__slide-img {
+  width: 500px;
+  height: 400px;
+  position: relative;
+  border-radius: 20px;
+}
+
+.swiper__img-text-block {
+  width: 100%;
+  height: 140px;
+  padding: 18px 50px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: rgba(3, 3, 3, 0.6);
+  border-radius: 20px;
+}
+.swiper__img-title {
+  font-size: 32px;
+  line-height: 39px;
+  margin-bottom: 10px;
+}
+.swiper__img-desc {
+  font-size: 30px;
+  line-height: 36px;
 }
