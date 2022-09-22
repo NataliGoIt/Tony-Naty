@@ -54,9 +54,9 @@ body {
   }
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 400px) {
   .container {
-    width: 450px;
+    width: 370px;
   }
 }
 
@@ -425,6 +425,21 @@ body {
   font-size: 20px;
   font-style: normal;
   color: #fff;
+}
+
+@media screen and (min-width: 400px) {
+  .swiper {
+    width: 370px;
+    height: 500px;
+  }
+  .swiper-slide {
+    background-color: rgba(65, 65, 65, 0.418);
+    background-position: center;
+    background-size: cover;
+    width: 270px;
+    height: 370px;
+    border-radius: 10px;
+  }
 }
 
 @media screen and (min-width: 1024px) {
