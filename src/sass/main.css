@@ -48,18 +48,6 @@ body {
   margin: 0 auto;
 }
 
-@media screen and (min-width: 321px) {
-  .container {
-    width: 290px;
-  }
-}
-
-@media screen and (min-width: 400px) {
-  .container {
-    width: 370px;
-  }
-}
-
 @media screen and (min-width: 768px) {
   .container {
     width: 738px;
