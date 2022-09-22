@@ -9,7 +9,7 @@ const swiper = new Swiper('.swiper', {
   centeredSlides: true,
   slidesPerView: 'auto',
 
-  // spaceBetween: 5,
+  spaceBetween: 3,
   // coverflowEffect: {
   //   rotate: 0,
   //   stretch: 0,

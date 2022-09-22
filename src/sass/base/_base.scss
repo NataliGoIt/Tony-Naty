@@ -36,3 +36,13 @@ body {
   color: var(--color-title);
   margin: 0;
 }
+.h2-title {
+  font-size: 28px;
+  line-height: 1.17;
+}
+@media screen and (min-width: 1024px) {
+  .h2-title {
+    font-size: 68px;
+    margin-bottom: 50px;
+  }
+}
