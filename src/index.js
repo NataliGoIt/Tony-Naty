@@ -8,6 +8,7 @@ const swiper = new Swiper('.swiper', {
   grabCursor: true,
   centeredSlides: true,
   slidesPerView: 'auto',
+
   // spaceBetween: 5,
   // coverflowEffect: {
   //   rotate: 0,

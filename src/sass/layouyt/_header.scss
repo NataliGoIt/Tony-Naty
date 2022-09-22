@@ -18,6 +18,9 @@
 .header__nav-box {
   display: none;
 }
+.header__contacts {
+  display: none;
+}
 @media screen and (min-width: 768px) {
   .header__nav-box {
     display: block;
