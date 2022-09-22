@@ -29,17 +29,24 @@ const swiper = new Swiper('.swiper', {
     prevEl: '.swiper-button-prev',
   },
 });
-let audioList = document.querySelector('.listing');
-
+let audioList = document.querySelector('.listing'),
+  openModal = document.querySelectorAll('.music__item-more'),
+  backdrop = document.querySelector('.modal-more');
+// console.log(openModal);
+// openModal.addEventListener('click', onOpenModal);
 audioList.addEventListener('click', onClick);
-
 function onClick(e) {
-  if (!e.target.classList.contains('music__item')) {
+  const elemTarget = e.target;
+  console.log(e.target);
+  const playSongEl = elemTarget.querySelector('audio');
+  const thisClick = elemTarget.classList.contains('music__btn-more');
+  console.log(thisClick);
+  if (thisClick) {
+    onOpenModal();
+    console.log('wow');
+  } else if (!elemTarget.classList.contains('music__item')) {
     return;
   }
-  const elemTarget = e.target;
-  const playSongEl = elemTarget.querySelector('audio');
-
   if (elemTarget.classList.contains('is-active')) {
     elemTarget.classList.remove('is-active');
     pauseSong(playSongEl);
@@ -84,3 +91,16 @@ function pauseSong(audio) {
 //     playSong();
 //   }
 // });
+backdrop.addEventListener('click', onCloseModal);
+// openModal.addEventListener('click', onOpenModal);
+// else if (e.target.querySelector('.music__item-more')) {
+//     onOpenModal();
+//   }
+function onOpenModal() {
+  document.body.classList.add('show-modal');
+}
+function onCloseModal(e) {
+  if (e.currentTarget === e.target) {
+    document.body.classList.remove('show-modal');
+  }
+}

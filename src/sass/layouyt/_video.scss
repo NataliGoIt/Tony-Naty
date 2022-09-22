@@ -1,6 +1,7 @@
 .video {
   // background-color: bisque;
-  min-height: 560px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 @media screen and (min-width: 1024px) {
   .video__list {
@@ -25,5 +26,68 @@
   .main {
     width: 500px;
     height: 450px;
+  }
+
+  // =====================swiper===============================
+  .swiper {
+    width: 994px;
+    height: 500px;
+  }
+  .swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 550px;
+    height: 450px;
+    border-radius: 10px;
+  }
+  .swiper-pagination-bullet {
+    background-color: rgba(255, 255, 255, 0.719);
+    width: 30px;
+    height: 10px;
+    border-radius: 10px;
+  }
+  .swiper-button-next::after,
+  .swiper-button-prev::after {
+    color: #fff;
+  }
+  .swiper-button-prev {
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 90px;
+    background-color: rgba(13, 14, 14, 0.596);
+  }
+  .swiper-button-next {
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 90px;
+    background-color: rgba(13, 14, 14, 0.596);
+  }
+  .swiper__slide-img {
+    width: 500px;
+    height: 400px;
+    position: relative;
+    border-radius: 20px;
+  }
+
+  .swiper__img-text-block {
+    width: 500px;
+    height: 140px;
+    // padding: 18px 50px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: rgba(3, 3, 3, 0.6);
+    border-radius: 20px;
+  }
+  .swiper__img-title {
+    font-size: 32px;
+    line-height: 39px;
+    margin-bottom: 10px;
+  }
+  .swiper__img-desc {
+    font-size: 30px;
+    line-height: 36px;
   }
 }

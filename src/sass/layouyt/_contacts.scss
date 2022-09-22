@@ -1,65 +1,46 @@
-.new {
-  background-color: blueviolet;
-  min-height: 560px;
-}
-.swiper {
-  width: 994px;
-  height: 500px;
-}
-.swiper-slide {
-  background-position: center;
-  background-size: cover;
-  width: 550px;
-  height: 450px;
-  border-radius: 10px;
-}
-.swiper-pagination-bullet {
-  background-color: rgba(255, 255, 255, 0.719);
-  width: 30px;
-  height: 10px;
-  border-radius: 10px;
-}
-.swiper-button-next::after,
-.swiper-button-prev::after {
-  color: #fff;
-}
-.swiper-button-prev {
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 90px;
-  background-color: rgba(13, 14, 14, 0.596);
-}
-.swiper-button-next {
-  top: 0;
-  right: 0;
-  height: 100%;
-  width: 90px;
-  background-color: rgba(13, 14, 14, 0.596);
-}
-.swiper__slide-img {
-  width: 500px;
-  height: 400px;
-  position: relative;
-  border-radius: 20px;
+body.show-modal .modal-more {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: initial;
 }
 
-.swiper__img-text-block {
-  width: 100%;
-  height: 140px;
-  padding: 18px 50px;
-  position: absolute;
-  bottom: 0;
+.modal-more {
+  position: fixed;
+  top: 0;
   left: 0;
-  background: rgba(3, 3, 3, 0.6);
-  border-radius: 20px;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.404);
+  z-index: 100;
+
+  pointer-events: none;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 200ms ease-in-out, visibility 200ms ease-in-out;
 }
-.swiper__img-title {
-  font-size: 32px;
-  line-height: 39px;
-  margin-bottom: 10px;
+.modal-more__list {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0px 0px 35px 0px rgba(1, 33, 82, 0.712);
+  width: 400px;
+  padding: 80px 60px;
+  text-align: center;
+  background-color: aqua;
 }
-.swiper__img-desc {
-  font-size: 30px;
-  line-height: 36px;
+.modal-more__item {
+  background: #ffffff;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-radius: 10px;
+  box-shadow: 0 57px 145px rgba(0, 0, 0, 0.7);
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}
+.modal-more__link {
+  font-size: 24px;
+  font-style: normal;
+  color: #000000;
 }

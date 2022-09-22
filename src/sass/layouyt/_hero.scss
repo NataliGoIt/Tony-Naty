@@ -1,4 +1,9 @@
-.hero{
-background-color: black;
-min-height: 560px;
+.hero {
+  //   background-color: rgb(194, 69, 69);
+  height: 100vh;
+  min-height: 680px;
+}
+.hero__container {
+  height: 100%;
+  background-color: rgb(194, 69, 69);
 }

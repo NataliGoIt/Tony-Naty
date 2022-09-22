@@ -1,8 +1,9 @@
 .header {
+  position: absolute;
   background-color: transparent;
   padding-top: 39px;
   padding-bottom: 39px;
-
+  width: 100%;
   font-style: normal;
   font-weight: 600;
   font-size: 18px;
@@ -17,19 +18,26 @@
 .header__nav-box {
   display: none;
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 768px) {
   .header__nav-box {
     display: block;
-  }
-  .header__logo-box-mob {
-    display: none;
   }
   .header__burger-box {
     display: none;
   }
-  .header__position {
-    justify-content: center;
+  // ===================logo==============================
+  .header__logo {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    color: #ffffff;
   }
+  .header__logo-mob {
+    color: inherit;
+  }
+  // =======================nav=====================
   .header__nav-list {
     display: flex;
     justify-content: center;
@@ -47,12 +55,77 @@
   }
   .header__nav-link {
     font-style: normal;
-    font-weight: 600;
-    font-size: 20px;
-    line-height: 130%;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
     color: inherit;
   }
+  // =======================contacts===================
+  .header__contacts-item {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.16;
+    &:not(:last-child) {
+      margin-bottom: 5px;
+    }
+  }
+  .header__contacts-link {
+    font-style: normal;
+    color: #ffffff;
+  }
+  .nav__ikon {
+    width: 16px;
+    height: 12px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .header__nav-link {
+    font-size: 22px;
+  }
   .header__logo {
-    font-size: 28px;
+    font-size: 30px;
+  }
+  .header__nav-link {
+    font-size: 14px;
+  }
+  .header__contacts-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0;
+    margin-right: 10px;
+  }
+  .header__contacts-item {
+    &:not(:last-child) {
+      margin-bottom: 0;
+      margin-right: 20px;
+    }
+    font-size: 14px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .header {
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
+  .header__logo {
+    font-size: 26px;
+  }
+  .header__nav-link {
+    font-size: 14px;
+  }
+
+  .header__nav-item {
+    &:not(:last-child) {
+      margin-right: 50px;
+    }
+  }
+  .header__contacts-item {
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
   }
 }
