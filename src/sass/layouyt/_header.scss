@@ -14,7 +14,27 @@
   align-items: center;
   justify-content: space-between;
 }
-
+.header__logo {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+}
+.header__logo-mob {
+  color: inherit;
+}
+.header__burger {
+  padding: 0;
+  border: none;
+  background: none;
+}
+.header__burger-ikon {
+  width: 24px;
+  height: 24px;
+  fill: rgba(255, 255, 255, 0.897);
+}
 .header__nav-box {
   display: none;
 }
@@ -29,17 +49,6 @@
     display: none;
   }
   // ===================logo==============================
-  .header__logo {
-    font-style: normal;
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 1.2;
-    letter-spacing: 0.03em;
-    color: #ffffff;
-  }
-  .header__logo-mob {
-    color: inherit;
-  }
   // =======================nav=====================
   .header__nav-list {
     display: flex;
