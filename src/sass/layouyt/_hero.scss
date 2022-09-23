@@ -10,7 +10,7 @@
   height: 100vh;
   min-height: 680px;
   max-height: 800px;
-  // padding-top: 250px;
+
   background-image: linear-gradient(rgba(18, 18, 18, 0.88), rgba(18, 18, 18, 0.88)),
     url(../images/hero.jpg);
   background-repeat: no-repeat;
@@ -19,6 +19,7 @@
 }
 .hero__container {
   // height: 100%;
+
   // background-image: linear-gradient(rgba(18, 18, 18, 0.88), rgba(18, 18, 18, 0.88)),
   //   url(../images/hero.jpg);
   // background-repeat: no-repeat;
@@ -36,7 +37,7 @@
 }
 .hero__title {
   margin-top: 30px;
-  margin-bottom: 50px;
+  margin-bottom: 80px;
   font-weight: 600;
   font-size: 56px;
   line-height: 1.16;
