@@ -10,13 +10,6 @@ const swiper = new Swiper('.swiper', {
   slidesPerView: 'auto',
 
   spaceBetween: 3,
-  // coverflowEffect: {
-  //   rotate: 0,
-  //   stretch: 0,
-  //   depth: 100,
-  //   modifier: 1,
-  //   // slideShadows: true,
-  // },
   // If we need pagination
   pagination: {
     el: '.swiper-pagination',
@@ -31,8 +24,10 @@ const swiper = new Swiper('.swiper', {
   },
 });
 let audioList = document.querySelector('.listing'),
-  openModal = document.querySelectorAll('.music__item-more'),
-  backdrop = document.querySelector('.modal-more');
+  openBurger = document.querySelectorAll('.header__burger-ikon'),
+  backdrop = document.querySelector('.modal-more'),
+  backdropBurger = document.querySelector('.burger-menu'),
+  header = document.querySelector('.header');
 // console.log(openModal);
 // openModal.addEventListener('click', onOpenModal);
 audioList.addEventListener('click', onClick);
@@ -40,12 +35,11 @@ function onClick(e) {
   const elemTarget = e.target;
   console.log(e.target);
   const playSongEl = elemTarget.querySelector('audio');
-  const thisClick = elemTarget.classList.contains('music__btn-more');
+  const thisClick = elemTarget.classList.contains('music__btn');
   console.log(thisClick);
-  if (thisClick) {
-    onOpenModal();
-    console.log('wow');
-  } else if (!elemTarget.classList.contains('music__item')) {
+  // if (thisClick.classList.contains('is-active')) {
+  // } else
+  if (!elemTarget.classList.contains('music__item')) {
     return;
   }
   if (elemTarget.classList.contains('is-active')) {
@@ -93,15 +87,25 @@ function pauseSong(audio) {
 //   }
 // });
 backdrop.addEventListener('click', onCloseModal);
-// openModal.addEventListener('click', onOpenModal);
-// else if (e.target.querySelector('.music__item-more')) {
-//     onOpenModal();
-//   }
+
 function onOpenModal() {
   document.body.classList.add('show-modal');
 }
 function onCloseModal(e) {
   if (e.currentTarget === e.target) {
     document.body.classList.remove('show-modal');
+  }
+}
+openBurger.addEventListener('click', onOpenBurgerMenu);
+backdropBurger.addEventListener('click', onCloseBurgerMenu);
+function onOpenBurgerMenu() {
+  // document.body.classList.add('open-burger-menu');
+  console.log('gdsdg');
+}
+function onCloseBurgerMenu(e) {
+  console.log(e);
+  if (e.currentTarget === e.target) {
+    document.body.classList.remove('open-burger-menu');
+    console.log(e);
   }
 }

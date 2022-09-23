@@ -2,6 +2,7 @@ body.show-modal .modal-more {
   opacity: 1;
   visibility: visible;
   pointer-events: initial;
+  overflow: auto;
 }
 
 .modal-more {

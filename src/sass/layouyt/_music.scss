@@ -33,7 +33,7 @@
   background: none;
   width: 26px;
   height: 26px;
-  margin-right: 20px;
+  margin-left: auto;
 }
 .music__btn-play {
   width: 100%;
@@ -105,6 +105,46 @@
 }
 .music__social-box {
   margin-top: 40px;
+}
+// ====================================================
+.player {
+  background: rgba(255, 255, 255, 0.6);
+  padding: 23px 26px;
+}
+.player__list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.player__item {
+  &:not(:last-child) {
+    margin-right: 42px;
+  }
+}
+.player__btn {
+  padding: 0;
+  border: none;
+  background: none;
+}
+.player__btn-ikon {
+  width: 44px;
+  height: 44px;
+  fill: #fff;
+}
+.btn-play {
+  position: relative;
+  top: -50px;
+  width: 80px;
+  height: 80px;
+  filter: drop-shadow(0px 10px 20px rgba(85, 58, 1, 0.842));
+  // box-shadow: 0px 10px 20px rgba(85, 58, 1, 0.25);
+
+  border-radius: 50px;
+}
+.play {
+  background: rgba(133, 108, 0, 0.25);
+  background-blend-mode: overlay;
+  backdrop-filter: blur(20px);
 }
 @media screen and (min-width: 768px) {
   .music__first-album {
