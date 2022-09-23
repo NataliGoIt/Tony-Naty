@@ -241,9 +241,9 @@ body {
 }
 
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 230px), screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 230px), screen and (min-resolution: 192dpi) and (min-width: 230px), screen and (min-resolution: 2dppx) and (min-width: 230px) {
-  .hero__container {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 1, 3, 0.4)), to(rgba(0, 0, 0, 0.4))), url(../images/mobile.jpg);
-    background-image: linear-gradient(rgba(0, 1, 3, 0.4), rgba(0, 0, 0, 0.4)), url(../images/mobile.jpg);
+  .hero {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(18, 18, 18, 0.88)), to(rgba(18, 18, 18, 0.88))), url(../images/hero.jpg);
+    background-image: linear-gradient(rgba(18, 18, 18, 0.88), rgba(18, 18, 18, 0.88)), url(../images/hero.jpg);
   }
 }
 
@@ -251,15 +251,14 @@ body {
   height: 100vh;
   min-height: 680px;
   max-height: 800px;
-}
-
-.hero__container {
-  height: 100%;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(18, 18, 18, 0.88)), to(rgba(18, 18, 18, 0.88))), url(../images/hero.jpg);
   background-image: linear-gradient(rgba(18, 18, 18, 0.88), rgba(18, 18, 18, 0.88)), url(../images/hero.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+}
+
+.hero__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -270,7 +269,6 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-top: 200px;
 }
 
 .hero-social-list {
@@ -294,6 +292,7 @@ body {
 }
 
 .hero__deskription {
+  margin-top: 250px;
   font-weight: 500;
   font-size: 32px;
   line-height: 1.14;
