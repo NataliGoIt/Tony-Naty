@@ -267,12 +267,10 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding-top: 200px;
 }
 
 .hero-social-list {
@@ -315,6 +313,21 @@ body {
 .hero__social-icon {
   width: 32px;
   height: 32px;
+}
+
+@media screen and (min-width: 400px) {
+  .hero__title {
+    margin-top: 50px;
+    margin-bottom: 120px;
+    font-size: 70px;
+  }
+  .hero__deskription {
+    font-size: 38px;
+  }
+  .hero__social-title {
+    margin-bottom: 40px;
+    font-size: 28px;
+  }
 }
 
 .about {

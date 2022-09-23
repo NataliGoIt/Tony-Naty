@@ -20,8 +20,9 @@
   background-position: center;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  // justify-content: center;
   align-items: center;
+  padding-top: 200px;
 }
 .hero-social-list {
   display: flex;
@@ -54,6 +55,22 @@
 .hero__social-icon {
   width: 32px;
   height: 32px;
+}
+@media screen and (min-width: 400px) {
+  .hero__title {
+    margin-top: 50px;
+    margin-bottom: 120px;
+
+    font-size: 70px;
+  }
+  .hero__deskription {
+    font-size: 38px;
+  }
+  .hero__social-title {
+    margin-bottom: 40px;
+
+    font-size: 28px;
+  }
 }
 // @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
 //   screen and (min-resolution: 192dpi) and (min-width: 768px),
