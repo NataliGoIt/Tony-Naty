@@ -283,6 +283,29 @@ body {
   color: #df9d0e;
 }
 
+@media screen and (min-width: 400px) {
+  .hero__container {
+    padding-top: 220px;
+  }
+  .hero__title {
+    font-size: 45px;
+    margin-bottom: 30px;
+  }
+  .hero__deskription {
+    font-size: 24px;
+  }
+  .hero__btn-list {
+    margin-top: 70px;
+  }
+  .hero__btn-item:not(:last-child) {
+    margin-bottom: 35px;
+  }
+  .hero__btn {
+    padding: 18px 16px;
+    font-size: 18px;
+  }
+}
+
 .about {
   display: none;
   min-height: 560px;
