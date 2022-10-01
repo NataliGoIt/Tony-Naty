@@ -4,12 +4,12 @@ const swiper = new Swiper('.swiper', {
 
   loop: true,
 
-  effect: 'coverflow',
+  // effect: 'coverflow',
   grabCursor: true,
   centeredSlides: true,
   slidesPerView: 'auto',
 
-  spaceBetween: 3,
+  spaceBetween: 30,
   // If we need pagination
   pagination: {
     el: '.swiper-pagination',

@@ -34,9 +34,9 @@ a {
 }
 
 body {
-  background-color: #000000;
+  background-color: var(--background-color);
   font-family: 'Cormorant Garamond', serif;
-  color: var(--color-title);
+  color: var(--color-text);
   margin: 0;
 }
 
@@ -102,14 +102,10 @@ body {
           justify-content: space-between;
 }
 
-.header__logo {
-  color: #ffffff;
-}
-
 .header__logo-mob {
-  width: 150px;
-  height: 70px;
-  fill: #ffffff;
+  width: 80px;
+  height: 50px;
+  fill: var(--fill-icon);
 }
 
 .header__burger {
@@ -121,7 +117,7 @@ body {
 .header__burger-ikon {
   width: 32px;
   height: 32px;
-  fill: rgba(255, 255, 255, 0.897);
+  fill: var(--fill-icon);
 }
 
 .header__nav-box {
@@ -151,10 +147,10 @@ body {
             align-items: center;
   }
   .header__nav-item {
-    color: #ffffff;
+    color: var(--color-nav-text);
   }
   .header__nav-item:focus, .header__nav-item:hover {
-    color: aqua;
+    color: var(--color-hover-focus);
   }
   .header__nav-item:not(:last-child) {
     margin-right: 40px;
@@ -178,11 +174,7 @@ body {
   }
   .header__contacts-link {
     font-style: normal;
-    color: #ffffff;
-  }
-  .nav__ikon {
-    width: 16px;
-    height: 12px;
+    color: var(--color-nav-text);
   }
 }
 
@@ -245,85 +237,38 @@ body {
 }
 
 .hero {
-  height: 100vh;
-  min-height: 680px;
-  max-height: 800px;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(18, 18, 18, 0.88)), to(rgba(18, 18, 18, 0.88))), url(../images/hero.jpg);
   background-image: linear-gradient(rgba(18, 18, 18, 0.88), rgba(18, 18, 18, 0.88)), url(../images/hero.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-}
-
-.hero__container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.hero-social-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  padding-top: 180px;
+  padding-bottom: 70px;
 }
 
 .hero__title {
-  margin-top: 30px;
-  margin-bottom: 80px;
-  font-weight: 600;
-  font-size: 56px;
-  line-height: 1.16;
+  margin-bottom: 25px;
 }
 
-.hero__deskription {
-  margin-top: 250px;
-  font-weight: 500;
-  font-size: 32px;
-  line-height: 1.14;
+.hero__btn-list {
+  margin-top: 50px;
 }
 
-.hero__social-title {
-  margin-bottom: 30px;
-  font-weight: 500;
-  font-size: 24px;
-  line-height: 1.16;
+.hero__btn-item:not(:last-child) {
+  margin-bottom: 20px;
 }
 
-.hero__social-item:not(:last-child) {
-  margin-right: 20px;
+.hero__btn {
+  padding: 18px 16px;
+  border: 1px solid #fff;
+  border-radius: 10px;
+  background: none;
+  color: #fff;
 }
 
-.hero__social-icon {
-  width: 32px;
-  height: 32px;
-}
-
-@media screen and (min-width: 400px) {
-  .hero__title {
-    margin-top: 50px;
-    margin-bottom: 120px;
-    font-size: 70px;
-  }
-  .hero__deskription {
-    font-size: 38px;
-  }
-  .hero__social-title {
-    margin-bottom: 40px;
-    font-size: 28px;
-  }
+.active {
+  border: 1px solid #df9d0e;
+  color: #df9d0e;
 }
 
 .about {
@@ -356,11 +301,13 @@ body {
   }
   .about__title {
     margin-bottom: 36px;
+    color: var(--color-title-h2);
   }
   .about__description {
     font-size: 22px;
     line-height: 1.33;
     margin-bottom: 36px;
+    color: var(--color-text);
   }
   .about__btn {
     display: block;
@@ -369,7 +316,7 @@ body {
     border: 2px solid #ffffff;
     border-radius: 25px;
     background: none;
-    color: #ffffff;
+    color: var(--fill-icon);
     margin-bottom: 48px;
   }
   .about__img-box {
@@ -415,6 +362,7 @@ body {
 
 .video__title {
   margin-bottom: 40px;
+  color: var(--color-title-h2);
 }
 
 .swiper {
@@ -426,8 +374,8 @@ body {
   background-color: rgba(65, 65, 65, 0.418);
   background-position: center;
   background-size: cover;
-  width: 270px;
-  height: 370px;
+  width: 70%;
+  height: auto;
   border-radius: 10px;
 }
 
@@ -440,12 +388,10 @@ body {
 
 .swiper-button-next::after,
 .swiper-button-prev::after {
-  color: #fff;
+  color: var(--color-text);
 }
 
 .swiper__slide-img {
-  width: 100%;
-  height: 270px;
   border-radius: 10px;
   border-bottom-right-radius: 0;
   border-bottom-left-radius: 0;
@@ -468,12 +414,14 @@ body {
   font-size: 24px;
   line-height: 1.18;
   margin-bottom: 10px;
+  color: var(--color-title-h2);
 }
 
 .swiper__img-desc {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.18;
+  color: var(--color-text);
 }
 
 .swiper__btn-play {
@@ -504,12 +452,13 @@ body {
 .video__more-title {
   font-size: 15px;
   margin-right: 24px;
+  color: var(--color-title-h2);
 }
 
 .video__more-link {
   font-size: 20px;
   font-style: normal;
-  color: #fff;
+  color: var(--color-text);
 }
 
 @media screen and (min-width: 400px) {
@@ -679,16 +628,13 @@ body.show-modal .modal-more {
   color: #000000;
 }
 
-.music {
-  background-color: #000;
-}
-
 .is-active {
   background: aqua;
 }
 
 .music__title {
   margin-bottom: 32px;
+  color: var(--color-title-h2);
 }
 
 .music__item {
@@ -739,12 +685,22 @@ body.show-modal .modal-more {
 .music__btn-more {
   width: 100%;
   height: 100%;
-  fill: rgba(255, 255, 255, 0.692);
+  fill: var(--fill-icon);
+}
+
+.music__img {
+  margin-right: 15px;
 }
 
 .music__audio-title {
   font-size: 20px;
   margin-bottom: 5px;
+  color: var(--color-title-h2);
+}
+
+.music__audio-artist {
+  font-size: 18px;
+  color: var(--color-text);
 }
 
 .is-active {
@@ -787,7 +743,7 @@ body.show-modal .modal-more {
 
 .music__social-link {
   font-style: normal;
-  color: #fff;
+  color: var(--color-text);
 }
 
 .music__social-box {
@@ -824,7 +780,7 @@ body.show-modal .modal-more {
 .player__btn-ikon {
   width: 44px;
   height: 44px;
-  fill: #fff;
+  fill: var(--fill-icon);
 }
 
 .btn-play {
@@ -1010,16 +966,13 @@ body.open-burger-menu .burger-menu {
 }
 
 :root {
-  --hero-background-color: #121618;
-  --social-background-color: rgba(44, 53, 61, 0.2);
-  --video-background-color: #212121;
-  --about-background-color: #171717;
-  --trecks-background-color: #212121;
-  --footer-background-color: #171717;
-  --color-title: rgba(255, 255, 255, 0.973);
-  --color-text: rgba(170, 169, 169, 0.5);
+  --background-color: #000000;
+  --color-title-h1: rgba(255, 255, 255, 0.973);
+  --color-title-h2: #ffffff;
+  --color-text: rgba(170, 169, 169, 0.856);
+  --color-nav-text: #ffffff;
   --color-hover-focus: #fac564;
-  --play-btn: url(../images/play.png);
-  --pause-btn: url(../images/pause.png);
+  --fill-icon: #ffffff;
+  --fill-icon-hover-focus: #fac564;
 }
 /*# sourceMappingURL=main.css.map */

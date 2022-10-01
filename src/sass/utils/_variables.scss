@@ -1,16 +1,12 @@
 :root {
-  --hero-background-color: #121618;
-  --social-background-color: rgba(44, 53, 61, 0.2);
-  --video-background-color: #212121;
-  --about-background-color: #171717;
-  --trecks-background-color: #212121;
-  --footer-background-color: #171717;
-
-  --color-title: rgba(255, 255, 255, 0.973);
-  --color-text: rgba(170, 169, 169, 0.5);
+  --background-color: #000000;
+  --color-title-h1: rgba(255, 255, 255, 0.973);
+  --color-title-h2: #ffffff;
+  --color-text: rgba(170, 169, 169, 0.856);
+  --color-nav-text: #ffffff;
 
   --color-hover-focus: #fac564;
 
-  --play-btn: url(../images/play.png);
-  --pause-btn: url(../images/pause.png);
+  --fill-icon: #ffffff;
+  --fill-icon-hover-focus: #fac564;
 }

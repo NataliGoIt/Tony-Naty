@@ -19,11 +19,13 @@
   }
   .about__title {
     margin-bottom: 36px;
+    color: var(--color-title-h2);
   }
   .about__description {
     font-size: 22px;
     line-height: 1.33;
     margin-bottom: 36px;
+    color: var(--color-text);
   }
   // ------------------button-----------------
   .about__btn {
@@ -33,7 +35,7 @@
     border: 2px solid #ffffff;
     border-radius: 25px;
     background: none;
-    color: #ffffff;
+    color: var(--fill-icon);
     margin-bottom: 48px;
   }
   // -------------------img------------------

@@ -7,78 +7,43 @@
   }
 }
 .hero {
-  height: 100vh;
-  min-height: 680px;
-  max-height: 800px;
+  // height: 100vh;
+  // min-height: 680px;
+  // max-height: 800px;
 
   background-image: linear-gradient(rgba(18, 18, 18, 0.88), rgba(18, 18, 18, 0.88)),
     url(../images/hero.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-}
-.hero__container {
-  // height: 100%;
-
-  // background-image: linear-gradient(rgba(18, 18, 18, 0.88), rgba(18, 18, 18, 0.88)),
-  //   url(../images/hero.jpg);
-  // background-repeat: no-repeat;
-  // background-size: cover;
-  // background-position: center;
-  display: flex;
-  flex-direction: column;
-  // justify-content: center;
-  align-items: center;
-}
-.hero-social-list {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  padding-top: 180px;
+  padding-bottom: 70px;
 }
 .hero__title {
-  margin-top: 30px;
-  margin-bottom: 80px;
-  font-weight: 600;
-  font-size: 56px;
-  line-height: 1.16;
+  margin-bottom: 25px;
 }
-.hero__deskription {
-  margin-top: 250px;
-  font-weight: 500;
-  font-size: 32px;
-  line-height: 1.14;
+.hero__btn-list {
+  margin-top: 50px;
 }
-.hero__social-title {
-  margin-bottom: 30px;
-  font-weight: 500;
-  font-size: 24px;
-  line-height: 1.16;
-}
-.hero__social-item {
+.hero__btn-item {
   &:not(:last-child) {
-    margin-right: 20px;
+    margin-bottom: 20px;
   }
 }
-.hero__social-icon {
-  width: 32px;
-  height: 32px;
+.hero__btn {
+  padding: 18px 16px;
+  border: 1px solid #fff;
+  border-radius: 10px;
+  background: none;
+  color: #fff;
 }
-@media screen and (min-width: 400px) {
-  .hero__title {
-    margin-top: 50px;
-    margin-bottom: 120px;
+.active {
+  border: 1px solid rgb(223, 157, 14);
+  color: rgb(223, 157, 14);
+}
+// @media screen and (min-width: 400px) {
 
-    font-size: 70px;
-  }
-  .hero__deskription {
-    font-size: 38px;
-  }
-  .hero__social-title {
-    margin-bottom: 40px;
-
-    font-size: 28px;
-  }
-}
+// }
 // @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
 //   screen and (min-resolution: 192dpi) and (min-width: 768px),
 //   screen and (min-resolution: 2dppx) and (min-width: 768px){
