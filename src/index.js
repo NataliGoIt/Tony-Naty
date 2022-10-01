@@ -27,7 +27,23 @@ let audioList = document.querySelector('.listing'),
   openBurger = document.querySelectorAll('.header__burger-ikon'),
   backdrop = document.querySelector('.modal-more'),
   backdropBurger = document.querySelector('.burger-menu'),
-  header = document.querySelector('.header');
+  header = document.querySelector('.header'),
+  scrolTop = document.querySelector('.scrol-top');
+window.addEventListener('scroll', () => {
+  if (window.pageYOffset > 500) {
+    scrolTop.classList.remove('scrol-top-hiden');
+    scrolTop.classList.add('scrol-top-show');
+  } else {
+    scrolTop.classList.add('scrol-top-hiden');
+    scrolTop.classList.remove('scrol-top-show');
+  }
+});
+scrolTop.addEventListener('click', () => {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth',
+  });
+});
 // console.log(openModal);
 // openModal.addEventListener('click', onOpenModal);
 audioList.addEventListener('click', onClick);

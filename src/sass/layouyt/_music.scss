@@ -1,7 +1,29 @@
 .is-active {
   background: aqua;
 }
-
+.scrol-top {
+  padding: 10px;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: 1px solid #fff;
+  fill: #fff;
+  position: fixed;
+  bottom: 30px;
+  right: 20px;
+  cursor: pointer;
+  z-index: 10000;
+}
+.scrol-top-show {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: initial;
+}
+.scrol-top-hiden {
+  pointer-events: none;
+  opacity: 0;
+  visibility: hidden;
+}
 // ----------------------basic-----------------
 .music__title {
   margin-bottom: 32px;
