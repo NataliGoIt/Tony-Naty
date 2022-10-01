@@ -7,27 +7,33 @@
   }
 }
 .hero {
-  // height: 100vh;
-  // min-height: 680px;
-  // max-height: 800px;
+  height: 100vh;
+  min-height: 680px;
+  max-height: 800px;
 
   background-image: linear-gradient(rgba(18, 18, 18, 0.88), rgba(18, 18, 18, 0.88)),
     url(../images/hero.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+}
+.hero__container {
   padding-top: 180px;
-  padding-bottom: 70px;
 }
 .hero__title {
+  font-size: 38px;
   margin-bottom: 25px;
+}
+.hero__deskription {
+  font-size: 22px;
+  line-height: 1.2;
 }
 .hero__btn-list {
   margin-top: 50px;
 }
 .hero__btn-item {
   &:not(:last-child) {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
   }
 }
 .hero__btn {

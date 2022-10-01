@@ -103,8 +103,8 @@ body {
 }
 
 .header__logo-mob {
-  width: 60px;
-  height: 35px;
+  width: 70px;
+  height: 40px;
   fill: var(--fill-icon);
 }
 
@@ -115,8 +115,8 @@ body {
 }
 
 .header__burger-ikon {
-  width: 35px;
-  height: 35px;
+  width: 45px;
+  height: 45px;
   stroke: var(--fill-icon);
   fill: none;
 }
@@ -238,17 +238,28 @@ body {
 }
 
 .hero {
+  height: 100vh;
+  min-height: 680px;
+  max-height: 800px;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(18, 18, 18, 0.88)), to(rgba(18, 18, 18, 0.88))), url(../images/hero.jpg);
   background-image: linear-gradient(rgba(18, 18, 18, 0.88), rgba(18, 18, 18, 0.88)), url(../images/hero.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+}
+
+.hero__container {
   padding-top: 180px;
-  padding-bottom: 70px;
 }
 
 .hero__title {
+  font-size: 38px;
   margin-bottom: 25px;
+}
+
+.hero__deskription {
+  font-size: 22px;
+  line-height: 1.2;
 }
 
 .hero__btn-list {
@@ -256,7 +267,7 @@ body {
 }
 
 .hero__btn-item:not(:last-child) {
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 .hero__btn {
@@ -973,7 +984,7 @@ body.open-burger-menu .burger-menu {
   --color-text: rgba(170, 169, 169, 0.856);
   --color-nav-text: #ffffff;
   --color-hover-focus: #fac564;
-  --fill-icon: #ffffff;
+  --fill-icon: rgba(255, 255, 255, 0.856);
   --fill-icon-hover-focus: #fac564;
 }
 /*# sourceMappingURL=main.css.map */
