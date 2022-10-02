@@ -28,14 +28,14 @@ let audioList = document.querySelector('.listing'),
   backdrop = document.querySelector('.modal-more'),
   backdropBurger = document.querySelector('.burger-menu'),
   header = document.querySelector('.header'),
-  scrolTop = document.querySelector('.scrol-top');
+  scrolTop = document.querySelector('.scroll-top');
 window.addEventListener('scroll', () => {
   if (window.pageYOffset > 500) {
-    scrolTop.classList.remove('scrol-top-hiden');
-    scrolTop.classList.add('scrol-top-show');
+    scrolTop.classList.remove('scroll-top-hiden');
+    scrolTop.classList.add('scroll-top-show');
   } else {
-    scrolTop.classList.add('scrol-top-hiden');
-    scrolTop.classList.remove('scrol-top-show');
+    scrolTop.classList.add('scroll-top-hiden');
+    scrolTop.classList.remove('scroll-top-show');
   }
 });
 scrolTop.addEventListener('click', () => {
