@@ -125,3 +125,4 @@ function onCloseBurgerMenu(e) {
     console.log(e);
   }
 }
+let videoBox = document.querySelector('.video-test-box');
