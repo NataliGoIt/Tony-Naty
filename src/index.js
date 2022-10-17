@@ -1,5 +1,5 @@
 import './sass/main.scss';
-const swiper = new Swiper('.swiper', {
+new Swiper('.swiper', {
   // Optional parameters
 
   loop: true,
@@ -23,6 +23,7 @@ const swiper = new Swiper('.swiper', {
     prevEl: '.swiper-button-prev',
   },
 });
+
 let audioList = document.querySelector('.listing'),
   openBurger = document.querySelectorAll('.header__burger-ikon'),
   backdrop = document.querySelector('.modal-more'),
