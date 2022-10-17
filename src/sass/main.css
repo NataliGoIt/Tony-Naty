@@ -361,6 +361,11 @@ body {
   }
 }
 
+.services {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
 .services__item-advantage {
   text-align: left;
   list-style: inside;
@@ -377,6 +382,8 @@ body {
 .services__item {
   padding-top: 30px;
   padding-bottom: 30px;
+  width: 85%;
+  margin: 0 auto;
   text-align: center;
   border: 1px solid #ffffff;
 }
@@ -474,6 +481,10 @@ body {
     margin-top: 15px;
     margin-bottom: 20px;
   }
+  .services__item {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
   .services__item-advantage {
     font-size: 20px;
   }
@@ -489,7 +500,6 @@ body {
 
 .about {
   display: none;
-  min-height: 560px;
 }
 
 @media screen and (min-width: 1024px) {
@@ -569,6 +579,11 @@ body {
     font-style: normal;
     color: rgba(255, 255, 255, 0.815);
   }
+}
+
+.video {
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 
 .swiper {
@@ -802,6 +817,11 @@ body.show-modal .modal-more {
   pointer-events: none;
   opacity: 0;
   visibility: hidden;
+}
+
+.music {
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 
 .music__title {
