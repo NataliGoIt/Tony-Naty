@@ -433,6 +433,9 @@ body {
     text-align: center;
     border: 1px solid #ffffff;
   }
+  .services__item:not(:last-child) {
+    margin-bottom: 0;
+  }
 }
 
 .services__icon {
@@ -466,8 +469,17 @@ body {
 }
 
 @media screen and (min-width: 1440px) {
-  .services__item {
-    width: 30%;
+  .services__item-title {
+    font-size: 28px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+  }
+  .services__item-advantage {
+    font-size: 20px;
+  }
+  .services-btn {
+    padding: 14px 22px;
+    font-size: 18px;
   }
   .services__icon {
     width: 80px;
