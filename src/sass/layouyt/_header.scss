@@ -1,5 +1,4 @@
 .header {
-  position: absolute;
   background-color: transparent;
   padding-top: 39px;
   padding-bottom: 39px;
@@ -24,6 +23,7 @@
   padding: 0;
   border: none;
   background: none;
+  text-align: center;
 }
 .header__burger {
   display: flex;

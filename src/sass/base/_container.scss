@@ -1,6 +1,6 @@
 .container {
   min-width: 250px;
-  max-width: 100%;
+  // max-width: 100%;
   padding-right: 15px;
   padding-left: 15px;
   margin: 0 auto;
@@ -18,17 +18,18 @@
 // 768+
 @media screen and (min-width: 768px) {
   .container {
-    width: 738px;
+    width: 720px;
   }
 }
 // 1024+
-@media screen and (min-width: 1024px) {
+// @media screen and (min-width: 1024px) {
+//   .container {
+//     width: 994px;
+//   }
+// }
+@media screen and (min-width: 1260px) {
   .container {
-    width: 994px;
-  }
-}
-@media screen and (min-width: 1440px) {
-  .container {
-    width: 1410px;
+    width: 1200px;
+    // margin: 0 auto;
   }
 }

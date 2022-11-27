@@ -5,10 +5,12 @@
 
 // Стили для файла с примером HTML-фрагмента
 @import './base/base';
+@import './base/components';
 @import './base/container';
 @import './layouyt/header';
 @import './layouyt/hero';
 @import './layouyt/services';
+@import './layouyt/servicestwo';
 @import './layouyt/about';
 @import './layouyt/video';
 @import './layouyt/contacts';
