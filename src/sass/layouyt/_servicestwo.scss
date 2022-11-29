@@ -38,8 +38,8 @@
   }
 }
 .service__number-ikon {
-  width: 28px;
-  height: 28px;
+  width: 32px;
+  height: 32px;
   fill: var(--fill-icon);
   margin-bottom: 30px;
 }
@@ -49,6 +49,11 @@
   line-height: 1.4;
   color: var(--color-small-title);
   margin-bottom: 30px;
+}
+.service__description {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.4;
 }
 
 // ==================tablet==================================================
@@ -80,7 +85,7 @@
   }
   .service__list {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
   }
   .service__item {
     max-width: 220px;
@@ -90,9 +95,9 @@
     }
   }
   .service__number-ikon {
-    width: 28px;
-    height: 28px;
-    fill: var(--fill-icon);
+    width: 36px;
+    height: 36px;
+
     margin-bottom: 30px;
   }
   .service__small-title {
@@ -101,5 +106,17 @@
     line-height: 1.4;
     color: var(--color-small-title);
     margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 1260px) {
+  .service__title {
+    font-weight: 700;
+    font-size: 48px;
+  }
+  .service__btn-item {
+    width: 380px;
+  }
+  .service__item {
+    max-width: 380px;
   }
 }
